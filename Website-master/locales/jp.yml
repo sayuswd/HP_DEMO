@@ -1,0 +1,309 @@
+﻿jp:
+  top_header: "トップ"
+  introduction_header: "紹介"
+  download_header: "ダウンロード"
+  adoption_header: "採用実績"
+  support_header: "サポート"
+  contribute_header: "投稿エフェクト"
+  development_header: "開発"
+  documentation_header: "ドキュメント"
+  releasenote_header: "リリースノート"
+  language_set: "language"
+
+  forum_header: "フォーラム"
+
+  eyecatch_1: "エフェクト制作ツール"
+  eyecatch_2: "「Effekseer」"
+
+  top:
+    desc_movie1: "ツールで容易にエフェクト編集！"
+    desc_movie2: "こんなエフェクト作れます"
+
+    news_0: "2019.05.29 EffekseerForUnityをバージョンアップしました。"
+    news_1: "2019.05.14 Effekseer 1.43cバージョンが公開されました。"
+    news_2: "2019.05.13 EffekseerForUnityをバージョンアップしました。"
+    news_3: "2019.05.01 EffekseerForUnity, UE4をバージョンアップしました。"
+    news_4: "2019.03.02 Effekseer 1.43バージョンが公開されました。"
+    news_4_: "2019.01.20 Effekseer 1.42fバージョンが公開されました。"
+    news_4: "2019.01.03 EffekseerForDXLibをバージョンアップしました。"
+    news_5: "2017.11.04 Effekseer 1.31バージョンが公開されました。"
+    news_6: "2017.11.01 Effekseer 1.30バージョンが公開されました。"
+    news_7: "2017.01.24 サンプルを追加しました。ドキュメントを更新しました。"
+    news_8: "2016.10.23 EffekseerForDXUnityをバージョンアップしました。"
+    news_9: "2016.08.21 Effekseerを1.22にバージョンアップしました。エフェクトのライセンスが一部CC-0になりました。"
+
+    news_template1: "2018.11.12 EffekseerForUnity, Cocos2d-xをバージョンアップしました。"
+    news_template2: "2019.03.17 Effekseer 1.43cバージョンが公開されました。"
+
+    for_designer: "デザイナー向け"
+    for_programmer: "プログラマー向け"
+
+    effect_editor: "エフェクト作成ツール"
+    effect_plugin: "エフェクト再生用ライブラリ、プラグイン"
+    dxlib: "DXライブラリ"
+
+    documentation_desc: "Effekseerの使い方等はこちら"
+    to_documentation: "ドキュメントへ"
+
+    contribute_desc: "ユーザー様方が投稿したエフェクト&エフェクトの投稿はこちら"
+    to_contribute: "投稿エフェクトへ"
+
+    book_header: "書籍"
+
+  top_content_1: "Effekseerは簡単に綺麗なパーティクルエフェクトを制作できるツールです。"
+
+  top_content_2: "
+	Effekseerはゲーム向けの爆発やヒットエフェクトなど様々なエフェクトを制作できるフリーでオープンソースなツールです。 
+	制作したエフェクトは2Dのアニメーションとして出力したり、3Dのエフェクトとしてゲームに組み込んで再生できます。"
+
+  top_content_3: "
+	ランタイムを組み込むことでDirectXやOpenGLを用いたC++のゲームでエフェクトを再生できます。
+	それだけでなく、Unity、UnrealEngine4、Cocos2d-xでも再生できます。
+	また、Windowsだけでなく、Mac OS XやLinux、iOS、Android、Emscriptenといった様々な環境に対応しています。"
+
+  top_underconstruction: ""
+
+  introduction:
+    easy: "簡単な操作でエフェクト作成"
+    create: "様々なパーティクルを組み合わせてエフェクトを作成"
+    play: "ゲーム中で再生！"
+    2d: "2D向けに連番画像も出力可能!"
+    2d_desc: "録画機能を使用することで、連番画像やgifアニメを出力できます。"
+    browser: "ブラウザゲームでも使用可能"
+    browser_warning: "※ ブラウザで再生するにはemscriptenを使用する必要があります。"
+
+  download:
+    beta: "ベータバージョン"
+    beta_desc: "* 基本的に1.3を使用してください。1.2で発生する不具合が修正されています。"
+    tool_desc: "デザイナー向けのエフェクトを作成するためのツールです。"
+    tool_runtime: "DirectXやOpenGLを用いたアプリケーション中でエフェクトを再生できるようにするランタイムです。"
+    tool_unity: "Unityで簡単に作成したエフェクトを再生できるようにするプラグインです。"
+    tool_dxlib: "DXライブラリで簡単に作成したエフェクトを再生できるようにするライブラリです。"
+    tool_unity_legacy: "Unityで簡単に作成したエフェクトを再生できるようにするプラグインです。主に2018年まで開発していた5.6対応のプラグインです。"
+
+    prev: "以前のバージョン"
+    eff_dxlib: "Effekseer For DXライブラリ"
+
+
+  development_program: "ツールについて"
+  development_content_1: "Effekseerはgithub上で開発されています。"
+  development_content_2: "常時、機能追加、バグ修正といったプルリクエストを募集しております。"
+
+
+
+  adoption_title: "タイトル"
+  adoption_developer: "開発"
+  adoption_site: "公式サイト"
+  adoption_andsoon: "他にも色々!"
+  
+  support:
+    content_1: "基本的にサポートはTwitter、Github、Slack、Discord上で行っております。"
+    content_2: "アカウントが無い方は、メール ( effekseer(at)gmail.com ) でも受け付けています。"
+    content_3: "バグ報告、要望、質問、自作エフェクト投稿等何でもどうぞ。"
+    
+    forum: "フォーラム"
+    forum_content: "フォーラムとしてGithubのissueを使用しています。バグ報告、要望、質問、自作エフェクト投稿等何でもどうぞ。"
+    
+    twitter: "Twitter"
+    twitter_content: "Twitterでもサポートを行っています。気軽に質問、要望等お願いします。"
+    
+    
+    github: "Github"
+    github_content: "Effekseerはgithub上で開発されています。issueは常に読んでいますので、気軽に投稿どうぞ。"
+    
+    mail: "Mail"
+    mail_content: "公開できない話等はメールでどうぞ。"
+
+  documentation:
+    help: "ヘルプ"
+    description: "各パッケージに同梱されているヘルプのオンライン版です。"
+    to_help: "ヘルプへ"
+    help_effekseer: "デザイナー向けのエフェクトを作成するためのツールのヘルプ"
+    help_runtime: "DirectXやOpenGLでエフェクトを再生できるようにするランタイムのヘルプ"
+    help_unity: "Unityでエフェクトを再生できるようにするプラグインのヘルプ"
+    dxlib: "Effekseer For DXライブラリ"
+    help_dxlib: "DXライブラリでエフェクトを再生できるようにするライブラリのヘルプ"
+    help_cocos2dx: "Cocos2d-xでエフェクトを再生できるようにするプラグインのヘルプ"
+    help_ue4: "UnrealEngine4でエフェクトを再生できるようにするプラグインのヘルプ"
+
+    tutorial: "チュートリアル"
+    tutorial_desc: "Effekseerのツールのチュートリアルです。一部の機能しか紹介していないので、詳しく知りたい方はリファレンスを参照お願いします。"
+
+    quicktutorial: "クイックチュートリアル"
+    quicktutorial_desc: "Effekseerのツールの使い方の簡単な説明です。"
+
+  contribute:
+    line1: "Effekseerのユーザー様方から投稿された素晴らしいエフェクトを公開しています。どのエフェクトも自由に自分のゲームや映像作品等に使用して問題ありません。エフェクトを改造するのも自由です。ほとんどのエフェクトはCC-0ライセンスで提供されています。"
+    line2: "また、常時エフェクトの投稿も募集しています。投稿されたエフェクトはCC-0ライセンスで配布します。"
+
+    how: "投稿方法"
+
+    how_line1: "下記の内容を記述したメールにエフェクトをzip形式で添付してください。"
+    how_line2: "投稿する先のメールアドレスは effekseer(at)gmail.com になります。"
+
+    name: "あなたの名前"
+    effectname: "エフェクト集の名前"
+    comment: "コメント"
+
+    contribution: "投稿"
+    contributed: "投稿されたエフェクト"
+    contributed_desc: "これらのエフェクトはCC-0ライセンスで提供されています。ただ、できれば使用した場合は作品のどこかにEffekseerと投稿者の名前を記述していただけると幸いです。"
+
+    contributed_old: "投稿されたエフェクト(旧)"
+    contributed_old_desc: "これらのエフェクトは古いライセンスで提供されています。Effekseerと一緒に使用する場合のみ自由に使用できます。"
+
+  contributed:
+    information: "情報"
+    contributor: "投稿者"
+    tno_works: "作品数"
+    comment: "コメント"
+    download: "ダウンロード"
+    none: "特に無し"
+    part: "※ 表示されているのは一部のエフェクトのみです。"
+    return: "投稿エフェクト一覧に戻る"
+    title_AndrewFM01: "AndrewFMさん 投稿エフェクト"
+    title_Effekseer: "Effekseer公式エフェクト"
+    title_MAGICALxSPIRAL: "MAGICAL×SPIRAL エフェクト"
+    title_NitoriBox: "NITORI BOX エフェクト"
+    title_Pierre01: "ピエールエフェクトvol.1"
+    title_Pierre02: "ピエールエフェクトvol.2"
+    Pierre02_Overview: "■ 概要 ■"
+    Pierre02_Desc1: "3Dゲーム向けのエフェクト集です。パーティクルをかなり贅沢に生成しまくります。"
+    Pierre02_List: "■ エフェクト内訳 ■"
+    Pierre02_List1: "簡易祝福エフェクト"
+    Pierre02_List2: "短槍大量召喚エフェクト"
+    Pierre02_List3: "星雲撒きエフェクト"
+    Pierre02_List4: "羽爆弾エフェクト"
+    Pierre02_List5: "火球投げエフェクト"
+    Pierre02_List6: "ゲート・オブ・カルビ"
+    Pierre02_List7: "出血エフェクト"
+    Pierre02_List8: "属性剣技エフェクト5種(残り火, 雷, 嵐, 月光, 聖光)"
+    Pierre02_Note: "■ 注意事項 ■"
+    Pierre02_Desc2: "歪みを多く使っているので、スペックによっては処理が重いと思います。その場合は「Blur」というノードの描画をOFFにすると処理が軽くなります。"
+    Pierre02_Contact: "■ 推奨連絡先 ■"
+    title_NextSoft01: "リーメベルタ ～願いを叶える秘宝と塔の守り人～エフェクト"
+    title_PDG: "project弾幕GIrls エフェクト"
+    title_suzuki01: "鈴木克史 さん 投稿エフェクト"
+    title_toust: "とうほう☆ストラテジー～LotusCraft～ エフェクト"
+
+    title_tktk01: "tktkエフェクト"
+    tktk01_Desc1: "エフェクト初投稿という事で今まで作ったエフェクトをある程度詰め込みました"
+    tktk01_Desc2: "※注意書き的な※"
+    tktk01_Desc3: "3Dゲームではなく、録画による、連番画像に出力して、2Dゲーム（具体的にはRPGツクール）で使うことを前提として作っていますのでアングルによっては、破綻したりパーティクルの発生数が多いので、描画が重いかもしれません"
+    tktk01_List: "※エフェクト内訳※（分類はやや適当です）"
+    tktk01_List1: "Arrow（矢系）2種"
+    tktk01_List2: "Blow（打撃、衝撃系）15種"
+    tktk01_List3: "Cure（回復系）7種"
+    tktk01_List4: "Dark（闇系）3種"
+    tktk01_List5: "Fire（火系）8種"
+    tktk01_List6: "hozyo（補助系）5種"
+    tktk01_List7: "Light（光系）4種"
+    tktk01_List8: "Magic（魔系）2種"
+    tktk01_List9: "Soil（地系）1種"
+    tktk01_List10: "Sword（斬撃系）22種"
+    tktk01_List11: "Wind（風系）2種"
+
+    title_tktk02: "tktkエフェクト2"
+    tktk02_Desc1: "このエフェクトは、ゲームエンジンにはUVアニメーションで表示させる事を想定した作りになっております。<br>比較的に描画負担が重たかったり、向きによる破綻も比較的に大きくなってしまっていると思います。<br>基本的に加算合成のみで作ってあるので、画像として出力すると綺麗に映りますが<br>歪みも加算合成で尚且つ、歪みの影響が比較的に大きいので<br>Efkファイルにする場合は、歪みを調整した方が良いかと思います。（主にDistortionという名前のノードが歪みになっています）<br>確認が大変になってしまったので、使用していないほかの方のテクスチャも入ってしまっています。"
+    tktk02_List: "※エフェクト内訳※（分類はやや適当です）"
+    tktk02_List1: "Blow（衝撃）6種"
+    tktk02_List2: "Claw（爪）4種"
+    tktk02_List3: "Dark（闇）2種"
+    tktk02_List4: "Fire（火）8種"
+    tktk02_List5: "Gun（銃）9種"
+    tktk02_List6: "Light（光）4種"
+    tktk02_List7: "Spear（槍）4種"
+    tktk02_List8: "Sword（剣）6種"
+
+  releasenote:
+
+    v140: "1.40"
+    v140_1: "UIの一新"
+    v140_1_desc: "全てのUIが置き換わりました。テーマがダークカラーになり、操作性が向上しました。"
+
+    v140_2: "macOS対応"
+    v140_2_desc: "EffekseerがmacOSで動作するようになりました。"
+
+    v140_3: "アニメーション付きモデルの読み込み"
+    v140_3_desc: "アニメーション付きのFBXを読み込めるようになりました。 モデルとしても生成方法の位置としても使用できます。"
+
+    v140_4: "めり込み防止パラメーターの追加"
+    v140_4_desc: "奥行き方向に対して移動させるパラメーターが追加されました。それにより、エフェクトとオブジェクトのめり込みの防止が簡単になりました。"
+
+    v140_5: "軌跡やリボンを滑らかにするパラメーターの追加"
+    v140_5_desc: "軌跡やリボンを滑らかにするパラメーターが追加されました。"
+
+    v140_6: "歪みの改良"
+    v140_6_desc: "描画優先度の設定により、エフェクトをエフェクトの歪みで歪ませれるようになりました。"
+
+    v140_7: "サンプルエフェクト"
+    v140_7_desc: "40個以上のサンプルエフェクトが追加されました。公式サイトからダウンロードできます。"
+    
+    v140_8: "不具合修正"
+    v140_8_desc: "複数のバグが修正されました。"
+
+    v130: "1.30"
+    v130_1: "ファイルビューワ"
+    v130_1_desc: "Effekseerのファイルや画像、モデルファイル等をEffekseerから簡単に選択できるようになりました。サンプルを見る場合や画像を選択する場合に便利です。"
+
+    v130_2: "UnrealEngine4、Cocos2d-x対応"
+    v130_2_desc: "UnrealEngine4、Cocos2d-xでもEffekseerのエフェクトを再生できるようになりました。 それにより、主要な開発環境全てでエフェクトを再生できるようになりました。"
+
+    v130_3: "モデル読み込みの改良"
+    v130_3_desc: "Effekseerから直接、FBXやmqoファイルを読み込めるようになりました。 それにより、モデルを使用しやすくなりました。"
+
+    v130_4: "色の継承"
+    v130_4_desc: "位置、回転、拡大と同じように親の色も継承できるようになりました。 それにより、より複雑なエフェクトを作成できるようになりました。"
+
+    v130_5: "アイコン"
+    v130_5_desc: "UIにアイコンが表示されるようになりました。それにより、エフェクトの構造が見やすくなりました。"
+
+    v130_6: "サンプルエフェクト"
+    v130_6_desc: "70個以上のサンプルエフェクトが追加されました。公式サイトからダウンロードできます。"
+
+    v130_7: "Unityプラグインの改良"
+    v130_7_desc: "タイムラインに試験的に対応しました。"
+
+    v130_7: "不具合修正"
+    v130_7_desc: "複数のバグが修正されました。"
+
+    v130_8: "仕様変更"
+    v130_8_desc: "歪みやエフェクト生成のタイミングの仕様が変更されています。詳しくはヘルプを読んでください。"
+
+    v120: "1.20"
+    v120_1: "アルファチャンネル推定"
+    v120_1_desc: "動画を出力する時に、アルファチャンネルを推定します。加算合成なしにエフェクトを他の画面に描画できます。2Dゲームでエフェクトを再生しやすくなりました。"
+
+    v120_2: "アルファ付きAVI形式でエフェクトを保存する機能"
+    v120_2_desc: "アルファ付きAVI形式でエフェクトを保存できるようになりました。AfterEffectsといった映像編集ソフトで映像を作成するときに便利になりました。"
+
+    v120_3: "サンプルエフェクト"
+    v120_3_desc: "20個以上のサンプルエフェクトが追加されました。公式サイトからダウンロードできます。"
+
+    v120_4: "Unityプラグインの改良"
+    v120_4_desc: "歪み、アセットバンドルに対応しました。マルチプラットフォーム(iOS、Android、WebGL)への対応を強化しました。"
+
+    v120_5: "ショートカットの変更"
+    v120_5_desc: "アフターエフェクトに似ているショートカットに変更されました。"
+
+    v120_6: "不具合修正"
+    v120_6_desc: "複数のバグが修正されました。"
+
+    v110: "1.10"
+    v110_1: "カラースペース"
+    v110_1_desc: "編集中にカラースペースを変更できるようになりました。"
+
+    v110_2: "英語版UI"
+    v110_2_desc: "英語UIを選択できるようになりました。"
+
+    v110_3: "サンプルエフェクト"
+    v110_3_desc: "100個以上のサンプルエフェクトが追加されました。公式サイトからダウンロードできます。"
+
+    v110_4: "Unityプラグインの改良"
+    v110_4_desc: "Resourcesからのリソース読み込みに対応しました。"
+
+    v110_5: "DXライブラリ向けライブラリの改良"
+    v110_5_desc: "歪み、ネットワークに対応しました。"
+
+    v110_6: "不具合修正"
+    v110_6_desc: "複数のバグが修正されました。"

@@ -1,0 +1,298 @@
+﻿en:
+  top_header: "Top"
+  introduction_header: "Introduction"
+  download_header: "Download"
+  support_header: "Support"
+  adoption_header: "Use cases"
+  contribute_header: "Contributed Effects"
+  development_header: "Development"
+  documentation_header: "Documentation"
+  releasenote_header: "Release Notes"
+
+  forum_header: "Forum"
+
+  eyecatch_1: "Particle Effect Creating tool"
+  eyecatch_2: "Effekseer"
+
+  top:
+    desc_movie1: "You can create effects easily:"
+    desc_movie2: "Examples of created effects:"
+
+    news_0: "2019.05.29 Effekseer for Unity is updated."
+    news_1: "2019.05.14 Effekseer 1.43c version is released."
+    news_2: "2019.05.13 Effekseer for Unity is updated."
+    news_3: "2019.05.01 Effekseer for Unity and UE4 is updated."
+    news_4: "2019.03.02 Effekseer 1.43 version is released."
+    news_4__: "2019.01.03 Effekseer for DXLib is updated."
+    news_4_: "2017.11.21 Effekseer 1.32 version is released."
+    news_5: "2017.11.04 Effekseer 1.31 version is released."
+    news_6: "2017.11.01 Effekseer 1.30 version is released."
+    news_7: "2017.01.24 Add samples. Update documents."
+    news_8: "2016.05.23 Effekseer for Unity is updated."
+    news_9: "2016.08.21 Effekseer is updated to 1.22. A license of part of effects is changed into CC-0."
+
+    news_template1: "2018.11.12 Effekseer for Unity and Cocos2d-x is updated."
+    news_template2: "2019.03.17 Effekseer 1.43c version is released."
+
+    for_designer: "For Designers"
+    for_programmer: "For Programmers"
+
+    effect_editor: "Effect Editor"
+    effect_plugin: "Libraries and plugins for playing effects:"
+    dxlib: "DX Library"
+
+    documentation_desc: "Start learning how to use Effekseer by reading the in-depth tutorials:"
+    to_documentation: "View Documentation"
+
+    contribute_desc: "Download free-to-use/free-to-edit effects contributed by other Effekseer users:"
+    to_contribute: "View Contributed Effects"
+
+    book_header: "Book (Japanese)"
+
+  top_content_1: "Effekseer is a tool that allows easy creation of beautiful particle effects for games and movies."
+
+  top_content_2: "Effekseer is a free, open-source program. The effects can be exported as 2D animations or 3D effects. "
+
+  top_content_3: "Using the included runtimes, these can be displayed in engines including DirectX, OpenGL, Unity, UnrealEngine4 and Cocos2d-x. Furthermore, the effects are available on Windows, Mac OS X, Linux, iOS, Android, Emscripten, and so on."
+
+  top_underconstruction: ""
+
+  introduction:
+    easy: "You can create cool effects easily:"
+    create: "A wide variety of particle effects can be made:"
+    play: "Created effects can be shown in both 2D and 3D games:"
+    2d: "The 3D effects can be exported as 2D images:"
+    2d_desc: "Sprite sheets, gif animations, and transparent AVI files can be exported via a built-in recording function."
+    browser: "These effects can also be shown in browsers:"
+    browser_warning: "* requires Emscripten."
+
+  download:
+    beta: "Beta version"
+    beta_desc: "* Basically use 1.3 please. A bug occurring in 1.2 has been fixed."
+    tool_desc: "This is a tool for designers to create particle effects."
+    tool_runtime: "This is a runtime to show effects in your DirectX or OpenGL applications."
+    tool_unity: "This is a plugin to show effects in your Unity applications."
+    tool_dxlib: "This is a library to show effects in your DXLibrary applications."
+    tool_unity_legacy: "This is a plugin to show effects in your Unity applications. This is a 5.6 compatible plugin that was mainly developed until 2018."
+
+    prev: "Previous Versions"
+    eff_dxlib: "Effekseer for DXLibrary"
+  
+  development_program: "About Tool"
+  development_content_1: "Effekseer is developed on Github."
+  development_content_2: "We always welcome pull requests for improvements, bug fixes, and so on:"
+
+  adoption_title: "Title"
+  adoption_developer: "Developer"
+  adoption_site: "Official Site"
+  adoption_andsoon: "And many more!"
+
+  support:
+    content_1: "Usually, Effekseer supports users on Twitter, Github, Slack and Discord."
+    content_2: "If you don't have an acount, you can send a mail ( effekseer(at)gmail.com )."
+    content_3: "You can use this to discuss bug reports, requests, questions and so on."
+    
+    forum: "Forum"
+    forum_content: "We use Github's issues as a forum. You can use this to discuss bug reports, requests, questions and so on."
+    
+    twitter: "Twitter"
+    twitter_content: "We also support Effekseer on Twitter."
+    
+    github: "Github"
+    github_content: "Effekseer is developed on Github. You can post issues freely."
+    
+    mail: "Mail"
+    mail_content: "For other coorespondences, please send us an e-mail."
+
+  documentation:
+    help: "Help"
+    description: "Help files are also bundled with each package"
+    to_help: "[View]"
+    help_effekseer: "used by designers to create the effects."
+    help_runtime: "used for showing the effects in your DirectX or OpenGL applications."
+    help_unity: "used for showing the effects in your Unity applications."
+    dxlib: "Effekseer for DX Library"
+    help_dxlib: "used for showing the effects in your DX Library applications."
+    help_cocos2dx: "used for showing the effects in your Cocos2d-x applications."
+    help_ue4: "used for showing the effects in your UnrealEngine4 applications."
+
+    tutorial: "Tutorial"
+    tutorial_desc: "Here are tutorials"
+
+    quicktutorial: "Quick Tutorial"
+    quicktutorial_desc: "This is a quick tutorial for Effekseer."
+
+  contribute:
+    line1: "We distribute cool effects contributed by the users of Effekseer. They are free to use in your games or movies, and you are also free to edit these effects. Almost effects are distributed under CC-0 License."
+    line2: "We always collect effects. Contributed effects are distributed under CC-0 License. Please contribute using the following link:"
+
+    how: "How to contribute"
+
+    how_line1: "Attach the effect in a zip format to the e-mail that describes the following contents."
+    how_line2: "The e-mail address to post to will be effekseer (at) gmail.com."
+
+    name: "Your name"
+    effectname: "Effects collection's name"
+    comment: "Comment"
+
+    contribution: "Contribution"
+    contributed: "Contributed Effects"
+    contributed_desc: "These effects are distributed under CC-0 License. We'd appreciate it if you could credit Effekseer and a contributor somewhere in your works."
+    contributed_old: "Contributed Effects(Old)"
+    contributed_old_desc: "These effects are distributed under old License. It is free to use when effects is played with Effekseer."
+
+  contributed:
+    information: "Information"
+    contributor: "Contributor:"
+    tno_works: "Number of works:"
+    comment: "Comment"
+    download: "Download"
+    none: "None"
+    part: "* Shown effects are a part of effect package."
+    return: "Return to contributed effects list"
+    title_AndrewFM01: "AndrewFM's Contributed Effects"
+    title_Effekseer: "Effekseer Official Effects"
+    title_MAGICALxSPIRAL: "MAGICAL X SPIRAL Effects"
+    title_NitoriBox: "NITORI BOX Effects"
+    title_Pierre01: "Pierre's Effects vol.1"
+    title_Pierre02: "Pierre's Effects vol.2"
+    Pierre02_Overview: "* Overview *"
+    Pierre02_Desc1: "An effects collection for 3D games. The particles can be used to create quite extravagant effects."
+    Pierre02_List: "* List of Effects *"
+    Pierre02_List1: "Blessing Effect"
+    Pierre02_List2: "Blood Lance Effect"
+    Pierre02_List3: "Cosmic Mist Effect"
+    Pierre02_List4: "Feather Bomb Effect"
+    Pierre02_List5: "Fire Ball Effect"
+    Pierre02_List6: "Gate of Calve"
+    Pierre02_List7: "Bleeding Effect"
+    Pierre02_List8: "5 Effects for Sword Skills (Ember, Lightning, Storm, Moonlight, Sacred Light)"
+    Pierre02_Note: "* Important Note *"
+    Pierre02_Desc2: "These effects make ample use of the distortion effect, which can be graphically intensive. If needed, you can disable the nodes that are labeled \"blur\" to improve performance."
+    Pierre02_Contact: "* Contact *"
+    title_NextSoft01: "リーメベルタ ～願いを叶える秘宝と塔の守り人～Effects"
+    title_PDG: "project弾幕GIrls Effects"
+    title_suzuki01: "鈴木克史's Contributed Effects"
+    title_toust: "とうほう☆ストラテジー～LotusCraft～ Effects"
+    title_tktk01: "tktk Effect"
+    tktk01_Desc1: "エフェクト初投稿という事で今まで作ったエフェクトをある程度詰め込みました"
+    tktk01_Desc2: "※注意書き的な※"
+    tktk01_Desc3: "3Dゲームではなく、録画による、連番画像に出力して、2Dゲーム（具体的にはRPGツクール）で使うことを前提として作っていますのでアングルによっては、破綻したりパーティクルの発生数が多いので、描画が重いかもしれません"
+    tktk01_List: "※エフェクト内訳※（分類はやや適当です）"
+    tktk01_List1: "Arrow（矢系）2種"
+    tktk01_List2: "Blow（打撃、衝撃系）15種"
+    tktk01_List3: "Cure（回復系）7種"
+    tktk01_List4: "Dark（闇系）3種"
+    tktk01_List5: "Fire（火系）8種"
+    tktk01_List6: "hozyo（補助系）5種"
+    tktk01_List7: "Light（光系）4種"
+    tktk01_List8: "Magic（魔系）2種"
+    tktk01_List9: "Soil（地系）1種"
+    tktk01_List10: "Sword（斬撃系）22種"
+    tktk01_List11: "Wind（風系）2種"
+
+    title_tktk02: "tktk Effects vol.2"
+    tktk02_Desc1: "このエフェクトは、ゲームエンジンにはUVアニメーションで表示させる事を想定した作りになっております。\n比較的に描画負担が重たかったり、向きによる破綻も比較的に大きくなってしまっていると思います。\n基本的に加算合成のみで作ってあるので、画像として出力すると綺麗に映りますが\n歪みも加算合成で尚且つ、歪みの影響が比較的に大きいので\nEfkファイルにする場合は、歪みを調整した方が良いかと思います。（主にDistortionという名前のノードが歪みになっています）\n確認が大変になってしまったので、使用していないほかの方のテクスチャも入ってしまっています。"
+    tktk02_List: "Contents of package"
+    tktk02_List1: "Blow x6"
+    tktk02_List2: "Claw x4"
+    tktk02_List3: "Dark x2"
+    tktk02_List4: "Fire x8"
+    tktk02_List5: "Gun x9"
+    tktk02_List6: "Light x4"
+    tktk02_List7: "Spear x4"
+    tktk02_List8: "Sword x6"
+
+  releasenote:
+
+    v140: "1.40"
+    v140_1: "The renewal of UI"
+    v140_1_desc: "All UIs have been replaced. The theme became dark color, and operability was improved."
+
+    v140_2: "Support macOS"
+    v140_2_desc: "Support the tool for macOS."
+
+    v140_3: "Addition of a function to read FBX with animation."
+    v140_3_desc: "Effekseer can now load FBX with animation. It can be used as a model as well as a position of spawning method."
+
+    v140_4: "Addition of parameters to protect collied effects and objects."
+    v140_4_desc: "A parameter to move in the depth direction has been added. This makes it easier to prevent effects and objects from getting collied."
+
+    v140_5: "Addition of parameters to make ribbons and tracks smooth"
+    v140_5_desc: "Parameters to make ribbons and tracks smooth has been added"
+
+    v140_6: "Improvement of distortion"
+    v140_6_desc: "Effects can make other effect distorted with rendering priority"
+
+    v140_7: "Many sample effects"
+    v140_7_desc: "More than 40 new sample effects are added. You can download these from the official website, too."
+    
+    v140_8: "Bug fixes"
+    v140_8_desc: "Fixed many bugs."
+    
+
+    v130: "1.30"
+    v130_1: "File viewer"
+    v130_1_desc: "You can now easily select Effekseer's files and images, model files etc from Effekseer. It is convenient when viewing samples or selecting images."
+
+    v130_2: "Launch you effects on UnrealEngine4, Cocos2d-x"
+    v130_2_desc: "UnrealEngine4, Cocos2d-x now also allows you to play Effekseer 's effects. This makes it possible to play effects in all major development environments."
+
+    v130_3: "Improvements to loading 3d model"
+    v130_3_desc: "You can now load FBX and mqo files directly from Effekseer. It makes it easier to use the model."
+
+    v130_4: "Color inheritance"
+    v130_4_desc: "It is now possible to inherit the parent's color as well as position, rotation and enlargement. This makes it possible to create more complicated effects."
+
+    v130_5: "Icons"
+    v130_5_desc: "Icons are now displayed in the UI. This makes the structure of the effect easy to see."
+
+    v130_6: "Many sample effects"
+    v130_6_desc: "More than 70 new sample effects are added. You can download these from the official website, too."
+
+    v130_7: "Improvements to the Unity Plugin"
+    v130_7_desc: "We corresponded to the timeline experimentally."
+
+    v130_7: "Bug fixes"
+    v130_7_desc: "Fixed many bugs."
+
+    v130_8: "Specification change"
+    v130_8_desc: "Specifications of distortion and effect generation timing have been changed. Please read help for details."
+
+    v120: "1.20"
+    v120_1: "Alpha channel estimation"
+    v120_1_desc: "Alpha channels can be estimated when an effect is exported. With this, you can render effects on other screens without having to use additive blending. This is useful when showing effects in 2D games."
+
+    v120_2: "Saving effects as an AVI file with alphaa"
+    v120_2_desc: "You can save effects as an AVI file, with an included alpha channel. This is useful for creating movies in video editing software such as AfterEffects, since the effect can be placed in its own video layer without obscuring ohter video layers beneath it."
+
+    v120_3: "Many sample effects"
+    v120_3_desc: "More than 20 new sample effects are added. You can download these from the official website, too."
+
+    v120_4: "Improvements to the Unity Plugin"
+    v120_4_desc: "Distortion and Asset bundle now work. Improved correspondence with multi-platform (iOS, Android, WebGL)."
+
+    v120_5: "Changed hot keys"
+    v120_5_desc: "Hot keys take after AfterEffects."
+
+    v120_6: "Bug fixes"
+    v120_6_desc: "Fixed many bugs."
+
+    v110: "1.10"
+    v110_1: "Color space"
+    v110_1_desc: "Now you can change a color space while editing effects."
+
+    v110_2: "English user interface"
+    v110_2_desc: "Now you can display the user interface in English."
+
+    v110_3: "Many sample effects"
+    v110_3_desc: "More than 100 new sample effects are added. You can download these from the official website, too."
+
+    v110_4: "Improvements to the Unity Plugin"
+    v110_4_desc: "The plugin now supports loading resources from Resources directory."
+
+    v110_5: "Improvement to the Library for DXLibrary"
+    v110_5_desc: "The library now supports network and distortion."
+
+    v110_6: "Bug fixes"
+    v110_6_desc: "Fixed many bugs."
