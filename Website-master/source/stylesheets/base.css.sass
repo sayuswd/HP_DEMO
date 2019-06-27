@@ -1,8 +1,106 @@
+/* header contens main 共通css設定*/
+//モバイルファースト (全環境に共通のデザイン) 
 
 body
- background-color : #f8f9f9
+ background-color : #e9eeee
  width: 100%
  margin: 0px auto
+
+#header
+ overflow: hidden
+ text-align: center
+ display: block
+ background-color : #848a8a
+
+#header .logo
+ display: inline-block
+ margin: 0px 20px 0px 10px
+
+#header .selected
+ display: inline-block
+ background-color : #f8f9f9
+ padding: 0px 10px 1px 10px
+
+#header .unselected
+ display: inline-block
+ padding: 0px 10px 1px 10px
+
+#header .unselected:hover
+ background-color : #bcc5c5
+
+#header h1
+ height: 25px
+ color : #3c3f3f
+ font-size : 16px
+ font-family : "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif"
+
+#header a
+ color : #3c3f3f
+ text-decoration : none
+ border : 0
+
+#contents
+ width : 100%
+
+#contents .eyecatch
+ position: relative
+
+#contents .eyecatch img
+ width : 100%
+ margin: 50px 0px 50px 0px
+ display: inline-block
+ box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 1.0)
+
+#contents .eyecatch p
+ position: absolute
+ top: 20px
+ left: 50px
+ font-size : 36px
+ font-family : "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif"
+ text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000
+
+#contents .eyecatch a
+ position: absolute
+ top: 200px
+ left: 50px
+ font-size : 36px
+ font-family : "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif"
+ background-color : #2A2A2A
+ text-decoration : none
+ border : 0
+ border-radius: 5px
+ padding: 10px 20px 10px 20px
+ display: inline-block
+ padding: 0.5em 1em
+ background: #bcc5c5
+ border-left: solid 15px #69bec6/*左線*/
+ color: #b1ffff/*文字色*/
+ font-weight: bold
+ /*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29)*/
+
+/*#contents .eyecatch a:visited
+ color : #2A2A2A*/
+
+#contents .eyecatch a:hover
+ color : #2A2A2A
+
+#contents .eyecatch a:active
+ box-shadow: inset 0 0 2px #3c3f3f
+ transform: translateY(2px)
+
+#contents h1
+ color : #3c3f3f
+
+#contents h2
+ color : #3c3f3f
+
+#contents h3
+ color : #3c3f3f
+
+
+//タブレット用デザインとして付け足すデザイン 
+
+ @media (min-width: 768px) 
 
 #header
  overflow: hidden
@@ -72,10 +170,21 @@ body
  text-decoration : none
  border : 0
 
-#contents
- width : 100%
 
-#contents .eyecatch
+//PC用デザインとして付け足すデザイン 
+
+ @media (min-width: 1000px) 
+
+#contents .main
+  width: 1000px
+  margin: 0 auto
+  text-align: center
+
+#contents
+ color : #3c3f3f
+ font-family : "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif"
+
+contents .eyecatch
  position: relative
 
 #contents .eyecatch img
@@ -103,11 +212,8 @@ body
  border : 0
  border-radius: 5px
  padding: 10px 20px 10px 20px
-
-#contents .eyecatch a
  display: inline-block
  padding: 0.5em 1em
- text-decoration: none
  background: #bcc5c5
  border-left: solid 15px #69bec6/*左線*/
  color: #b1ffff/*文字色*/
@@ -124,34 +230,42 @@ body
  box-shadow: inset 0 0 2px #3c3f3f
  transform: translateY(2px)
 
-#contents h1
- color : #3c3f3f
 
-#contents h2
- color : #3c3f3f
+#contents .news_section
+ width: 100%
 
-#contents h3
- color : #3c3f3f
+#contents .top_sections_setting
+ width: 100%
+ min-height: 600px
+ max-height: 900px
+ display: -webkit-flex
+ display: flex
+ -webkit-justify-content: center
+ justify-content: center
+ text-align: center
+ margin: 10px
 
-#contents .main
- @media screen and (min-width: 1000px)
-  width: 1000px
-  margin: 0 auto
-  text-align: center
+#contents .top_section
+ width: 100%
+ height: auto
+ max-height: 700px
+ background-color: #bcc5c5
+ text-align: center
+ margin: 10px
 
+#contents .top_section img
+ width: 80%
+ height: auto
+ max-height: 500px
+ margin-top: 10px
 
-#contents
- color : #3c3f3f
- font-family : "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif"
-
-#contents a:link
- color : #2A2A2A
-
-#contents a:visited
- color : #2A2A2A
-
-#contents a:hover
- color : #3c3f3f
+#contents .top_section p
+ width: 80%
+ height: auto 
+ max-height: 400px
+ text-align: left
+ display: inline-block
+ margin-top: 20% 
 
 #contents .movie
  float: left
