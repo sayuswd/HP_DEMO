@@ -1,5 +1,13 @@
 @charset "UTF-8";
 /* header contens main 共通css設定*/
+@media screen and (max-width: 899px) {
+  body {
+    background-color: #e9eeee;
+    width: 100%;
+    margin: 0px auto;
+  }
+}
+
 body {
   background-color: #e9eeee;
   width: 100%;
@@ -52,7 +60,7 @@ body {
 
 #contents .inner {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
   overflow: hidden;
 }
 
