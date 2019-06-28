@@ -1,113 +1,30 @@
 @charset "UTF-8";
-/* header contens main 共通css設定*/
-@media screen and (max-width: 899px) {
-  body {
-    background-color: #e9eeee;
-    width: 100%;
-    margin: 0px auto;
-  }
-}
-
+/*バックカラー　文字色 幅 各種設定*/
+/* header contens main 共通css設定 */
 body {
   background-color: #e9eeee;
   width: 100%;
   margin: 0px auto;
 }
 
-#header {
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  background-color: #848a8a;
-}
-
-#header .logo {
-  display: inline-block;
-  margin: 0px 20px 0px 10px;
-}
-
-#header .selected {
-  display: inline-block;
-  background-color: #f8f9f9;
-  padding: 0px 10px 1px 10px;
-}
-
-#header .unselected {
-  display: inline-block;
-  padding: 0px 10px 1px 10px;
-}
-
-#header .unselected:hover {
-  background-color: #bcc5c5;
-}
-
-#header h1 {
-  height: 25px;
-  color: #3c3f3f;
-  font-size: 16px;
-  font-family: "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif";
-}
-
-#header a {
-  color: #3c3f3f;
-  text-decoration: none;
-  border: 0;
-}
-
+/* main設定　 */
 #contents {
-  width: 100%;
+  width: auto;
 }
 
-#contents .inner {
-  margin: 0 auto;
-  max-width: 1200px;
-  overflow: hidden;
-}
-
+/* Title設定　 */
 #contents .eyecatch {
+  width: 100%;
+  height: 400px;
+  margin: 50px 0px 50px 0px;
+  background: url("/source/images/effects1_1.png") no-repeat;
+  background-position: left top;
+  background-size: 100% auto;
+  display: inline-block;
   position: relative;
-  background-color: #858585;
 }
 
-#contents .eyecatch img {
-  width: 100%;
-  min-width: 450px;
-  height: 200px;
-  margin: 50px 0px 50px 0px;
-  display: inline-block;
-}
-
-#contents .eyecatch p {
-  width: 100%;
-  min-width: 450px;
-  position: absolute;
-  top: 30px;
-  left: 10%;
-  margin: 50px 0px 50px 0px;
-  font-size: 2em;
-  font-family: "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif";
-  text-shadow: -1px -1px #3c3f3f, 1px -1px #3c3f3f, -1px 1px #3c3f3f, 1px 1px #3c3f3f;
-}
-
-#contents .eyecatch a {
-  position: absolute;
-  top: 220px;
-  left: 120px;
-  font-size: 1.3em;
-  font-family: "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif";
-  background-color: #2A2A2A;
-  text-decoration: none;
-  border: 0;
-  border-radius: 5px;
-  padding: 10px 20px 10px 20px;
-  display: inline-block;
-  padding: 0.5em 1em;
-  background: #bcc5c5;
-  border-left: solid 15px #69bec6;
-  color: #2A2A2A;
-  font-weight: bold;
-}
-
+/* Top画面のボタンの設定　 */
 #contents .eyecatch a:hover {
   color: #b1ffff;
 }
@@ -129,81 +46,13 @@ body {
   color: #3c3f3f;
 }
 
-#contents .top_sections_setting {
-  width: 100%;
-  max-height: 1000px;
-  display: inline-block;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#contents .top_section {
-  width: 100%;
-  height: auto;
-  max-height: 700px;
-  background-color: #bcc5c5;
-  text-align: center;
-}
-
-#contents .top_section img {
-  width: auto;
-  height: auto;
-  max-height: 500px;
-}
-
-#contents .top_section p {
-  width: 80%;
-  height: auto;
-  max-height: 500px;
-  text-align: left;
-  display: inline-block;
-  margin-top: 4%;
-}
-
-#contents .top_section .top_img1 {
-  display: none;
-}
-
-#contents .movie_sections_setting {
-  display: inline-block;
-  width: 100%;
-  height: 700px;
-  background-color: #68bdc5;
-  margin-top: 50px;
-}
-
-#contents .movie_sections_setting p {
-  font-size: 1em;
-  text-align: center;
-}
-
-#contents .movie_section1 {
-  text-align: left;
-}
-
-#contents .movie_section2 {
-  text-align: right;
-}
-
-#contents .movie {
-  margin: 50px;
-}
-
 #contents .adopted {
   width: 600px;
   background-color: #1A1A1A;
   margin: 20px auto;
 }
 
-#contents .download_sections_setting {
-  width: 100%;
-  height: 650px;
-  text-align: center;
-  margin: 20px;
-  margin-top: 100px;
-}
-
+/* download_sectionsの設定　 */
 #contents .download_section1 img {
   width: 80%;
   max-width: 400px;
@@ -211,217 +60,462 @@ body {
   height: auto;
 }
 
-#contents .download_section_links {
-  width: 100%;
-  min-width: 400px;
-  text-align: left;
-  padding-left: 30%;
-  padding-right: 30%;
+@media screen and (max-width: 899px) {
+  #header {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    background-color: #848a8a;
+  }
+  #header .logo {
+    display: inline-block;
+    margin: 0px 20px 0px 10px;
+  }
+  #header .selected {
+    display: inline-block;
+    background-color: #f8f9f9;
+    padding: 0px 10px 1px 10px;
+  }
+  #header .unselected {
+    display: inline-block;
+    padding: 0px 10px 1px 10px;
+  }
+  #header .unselected:hover {
+    background-color: #bcc5c5;
+  }
+  #header #header h1 {
+    height: 25px;
+    color: #3c3f3f;
+    font-size: 1em;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+  }
+  #header #header a {
+    color: #3c3f3f;
+    text-decoration: none;
+    border: 0;
+  }
+  /* main設定　 */
+  #contents .inner {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* Title設定　 */
+  #contents .eyecatch p {
+    width: 100%;
+    min-width: 450px;
+    position: absolute;
+    top: 30px;
+    left: 10%;
+    margin: 50px 0px 50px 0px;
+    font-size: 2em;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+    text-shadow: -1px -1px #3c3f3f, 1px -1px #3c3f3f, -1px 1px #3c3f3f, 1px 1px #3c3f3f;
+  }
+  /* Top画面のボタンの設定　 */
+  #contents .eyecatch a {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+    font-size: 1.3em;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+    background-color: #2A2A2A;
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #bcc5c5;
+    border-left: solid 15px #69bec6;
+    color: #2A2A2A;
+    font-weight: bold;
+  }
+  /* sec2の画像３枚の設定　 */
+  #contents .section1_setting {
+    width: 100%;
+    max-height: 1000px;
+    display: inline-block;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #contents .top_section {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    background-color: #bcc5c5;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #contents .top_section p {
+    width: 80%;
+    height: auto;
+    max-height: 500px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  #contents .top_section img {
+    width: auto;
+    height: auto;
+  }
+  /*#contents .top_section .top_img1 {
+  display: none;
+}*/
+  /* MVの設定　 */
+  #contents .section2_setting {
+    display: inline-block;
+    width: 100%;
+    height: 700px;
+    background-color: #68bdc5;
+    margin-top: 50px;
+  }
+  #contents .section2_setting p {
+    font-size: 1em;
+    text-align: center;
+  }
+  #contents .movie_section1 {
+    text-align: left;
+  }
+  #contents .movie_section2 {
+    text-align: right;
+  }
+  #contents .movie {
+    margin: 50px;
+  }
+  /* download_sectionsの設定　 */
+  #contents .section3_setting {
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+  }
+  #contents .download_section_links {
+    width: 100%;
+    min-width: 400px;
+    text-align: left;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  /* other_sectionsの設定　 */
+  #contents .section4_setting {
+    width: 100%;
+    height: 390px;
+    background-color: #bcc5c5;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #contents .documentation_section {
+    padding-top: 20px;
+  }
+  #contents .contribute_section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /* book_sectionsの設定　 */
+  #contents .section5_setting {
+    width: 100%;
+    height: 700px;
+    background-color: #68bdc5;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #contents .section5_setting img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    height: auto;
+  }
+  #contents .section5_setting .left_books {
+    width: 100%;
+    height: auto;
+  }
+  #contents .section5_setting .right_books {
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 30%;
+  }
+  /* news_sectionsの設定　 */
+  #contents .news_section {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+  }
 }
 
-#contents .other_sections_setting {
-  width: 100%;
-  height: 390px;
-  background-color: #bcc5c5;
-  text-align: center;
-  margin-top: 20px;
-}
-
-#contents .documentation_section {
-  padding-top: 20px;
-}
-
-#contents .contribute_section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-#contents .book_section {
+@media screen and (min-width: 900px) {
+  #header {
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    background-color: #848a8a;
+  }
+  #header .logo {
+    display: inline-block;
+    margin: 0px 20px 0px 10px;
+  }
+  #header .selected {
+    display: inline-block;
+    background-color: #f8f9f9;
+    padding: 0px 10px 1px 10px;
+  }
+  #header .unselected {
+    display: inline-block;
+    padding: 0px 10px 1px 10px;
+  }
+  #header .unselected:hover {
+    background-color: #bcc5c5;
+  }
+  #header h1 {
+    height: 25px;
+    color: #3c3f3f;
+    font-size: 16px;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+  }
+  #header a {
+    color: #3c3f3f;
+    text-decoration: none;
+    border: 0;
+  }
+  /* main設定　 */
+  #contents .inner {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  /* Title設定　 */
+  #contents .eyecatch p {
+    width: 100%;
+    min-width: 450px;
+    position: absolute;
+    top: 40px;
+    left: 20%;
+    margin: 50px 0px 50px 0px;
+    font-size: 3em;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+    text-shadow: -1px -1px #3c3f3f, 1px -1px #3c3f3f, -1px 1px #3c3f3f, 1px 1px #3c3f3f;
+  }
+  /* Top画面のボタンの設定　 */
+  #contents .eyecatch a {
+    position: absolute;
+    top: 220px;
+    left: 70%;
+    font-size: 2em;
+    font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
+    background-color: #2A2A2A;
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #bcc5c5;
+    border-left: solid 15px #69bec6;
+    color: #2A2A2A;
+    font-weight: bold;
+  }
+  /* sec2の画像３枚の設定　 */
+  #contents .section1_setting {
+    width: 100%;
+    height: auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  #contents .top_section {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    background-color: #bcc5c5;
+    text-align: center;
+    margin: 30px;
+  }
+  #contents .top_section p {
+    width: 80%;
+    height: auto;
+    max-height: 500px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 4%;
+  }
+  #contents .top_section img {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    display: inline-block;
+    max-height: 500px;
+  }
+  /*#contents .top_section .top_img1 {
+  display: inline;
+}*/
+  /* MVの設定　 */
+  #contents .section2_setting {
+    width: 100%;
+    height: 450px;
+    background-color: #68bdc5;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  #contents .movie_section1 {
+    text-align: center;
+    margin: 20px;
+  }
+  #contents .movie_section2 {
+    text-align: center;
+    margin: 20px;
+  }
+  #contents .section2_setting p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  #contents .section3_setting {
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 50px;
+  }
+  #contents .download_section1 {
+    height: auto;
+  }
+  #contents .download_section1 h2 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  #contents .download_section2 {
+    width: 300px;
+    height: auto;
+  }
+  #contents .download_section2 h3 {
+    margin-bottom: 90px;
+  }
+  #contents .download_section3 h3 {
+    margin-bottom: 20px;
+  }
+  #contents .download_section3 p {
+    margin-bottom: 20px;
+  }
+  #contents .download_section3 {
+    width: 300px;
+    height: auto;
+  }
+  #contents .download_section_links {
+    width: 100%;
+    min-width: 400px;
+    text-align: left;
+    margin: 30px;
+  }
+  /* other_sectionsの設定　 */
+  #contents .section4_setting {
+    width: 100%;
+    height: 390px;
+    background-color: #bcc5c5;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+  }
+  #contents .documentation_section {
+    margin-top: 60px;
+    margin-left: 25%;
+    margin-right: 30px;
+  }
+  #contents .contribute_section {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 20%;
+    padding-bottom: 30px;
+  }
+  /* book_sectionsの設定　 */
+  /*#contents .book_section {
+  display: grid;
+  justify-content: center;
   width: 100%;
   height: 700px;
-  background-color: #68bdc5;
+  background-color: $sashiiro2;
   text-align: center;
   margin-top: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-#contents .book_section img {
-  width: 100%;
-  max-width: 250px;
-  min-width: 200px;
-  height: auto;
-}
-
-#contents .book_section .left_books {
-  width: 100%;
-  height: auto;
-}
-
-#contents .book_section .right_books {
-  width: 100%;
-  height: auto;
-  text-align: left;
-  padding-top: 50px;
-  padding-left: 100px;
-}
-
-#contents .news_section {
-  width: 100%;
-  min-width: 200px;
-  height: auto;
-  margin-top: 100px;
-  margin-left: 20%;
-  margin-bottom: 100px;
-}
-
-#header {
-  overflow: hidden;
-  text-align: center;
-  display: block;
-  background-color: #848a8a;
-}
-
-#header .logo {
-  display: inline-block;
-  margin: 0px 20px 0px 10px;
-}
-
-#header .selected {
-  display: inline-block;
-  background-color: #f8f9f9;
-  padding: 0px 10px 1px 10px;
-}
-
-#header .unselected {
-  display: inline-block;
-  padding: 0px 10px 1px 10px;
-}
-
-#header .unselected:hover {
-  background-color: #bcc5c5;
-}
-
-#header h1 {
-  height: 25px;
-  color: #3c3f3f;
-  font-size: 16px;
-  font-family: "verdana","serif","Hiragino Kaku Gothic Pro","Meiryo","sans-serif";
-}
-
-#header a {
-  color: #3c3f3f;
-  text-decoration: none;
-  border: 0;
-}
-
-/* main設定　*/
-body {
-  background-color: #e9eeee;
-  width: 100%;
-  margin: 0px auto;
-}
-
-/* Title設定　*/
-#contents .eyecatch p {
-  top: 40px;
-  left: 20%;
-  font-size: 3em;
-}
-
-/* Top画面のボタンの設定　*/
-#contents .eyecatch a {
-  left: 70%;
-  font-size: 2em;
-}
-
-/* sec2の画像３枚の設定　*/
-#contents .top_sections_setting {
-  width: 100%;
-  height: auto;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#contents .top_section {
-  margin: 30px;
-}
-
-#contents .top_section img {
-  width: 80%;
-  margin-top: 10px;
-}
-
-#contents .top_section p {
-  max-height: 500px;
-  text-align: left;
-  display: inline-block;
-  margin-top: 4%;
-}
-
-#contents .top_section .top_img1 {
-  display: inline;
-}
-
-/* MVの設定　*/
-#contents .movie_sections_setting {
-  display: block;
-  width: 100%;
-  height: 800px;
-  background-color: #68bdc5;
-  margin-top: 30px;
-}
-
-#contents .movie_sections_setting p {
-  font-size: 2em;
-}
-
-#contents .movie_section1 p {
-  text-align: left;
-  padding-top: 30px;
-  padding-left: 20px;
-}
-
-#contents .movie_section2 p {
-  text-align: right;
-}
-
-#contents .movie {
-  margin-right: 250px;
-  margin-left: 250px;
-}
-
-/* download_sectionsの設定　*/
-/* other_sectionsの設定　*/
-#contents .other_sections_setting {
-  display: flex;
-  justify-content: center;
-  font-size: 1.2em;
-}
-
-#contents .documentation_section {
-  margin-top: 60px;
-  margin-left: 25%;
-  margin-right: 30px;
-}
-
-#contents .contribute_section {
-  margin-top: 50px;
-  margin-left: 25px;
-  margin-right: 20%;
-}
-
-/* book_sectionsの設定　*/
-#contents .book_section {
-  display: grid;
-  justify-content: center;
-}
-
-/* news_sectionsの設定　*/
-#contents .news_section {
-  text-align: center;
-  margin-left: 0px;
+}*/
+  #contents .section5_setting {
+    width: 100%;
+    height: 500px;
+    background-color: #68bdc5;
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    padding-bottom: 15px;
+  }
+  #contents .books_top {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  #contents .section5_setting h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #contents .section5_setting h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #contents .section5_setting img {
+    width: 100%;
+    max-width: 250px;
+    min-width: 200px;
+    height: auto;
+  }
+  #contents .section5_setting .left_books {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  #contents .section5_setting .right_books {
+    width: 300px;
+    height: auto;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 100px;
+    margin-top: 200px;
+    margin-right: 300px;
+  }
+  /* news_sectionsの設定　 */
+  #contents .news_section {
+    width: 100%;
+    min-width: 200px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
 }

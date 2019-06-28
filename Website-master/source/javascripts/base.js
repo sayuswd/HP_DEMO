@@ -1,3 +1,4 @@
+/*
 $(function () {
   $('.drawer').drawer({
     iscroll: {
@@ -10,4 +11,4 @@ $(function () {
       disableMouse: false
     },
   });
-});
+});*/

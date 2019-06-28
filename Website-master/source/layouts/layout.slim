@@ -124,19 +124,11 @@ html
 
     .language
       .language_menu
-        .drawer.drawer--top
-          div[role="banner"]
-              button.drawer-toggle.drawer-hamburger[type="button"]
-              span.sr-only
-              |language
-              span.drawer-hamburger-icon
-              nav.drawer-nav[role="navigation"]
-              ul.drawer-menu
-              li
-                a.drawer-brand href="/jp/index.html" 日本語
-              li
-                a.drawer-menu-item href="/en/index.html" English
-              li
-                a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
-          main[role="main"]
+        ul
+          li
+            a.drawer-brand href="/jp/index.html" 日本語
+          li
+            a.drawer-menu-item href="/en/index.html" English
+          li
+            a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
         == yield

@@ -1,13 +1,19 @@
 
 /*紹介　ダウンロード　採用　CSS　*/
 
+
+
+/*バックカラー　文字色 幅 各種設定*/
+
+/* 共通css設定 */
+
+
 //モバイルファースト (全環境に共通のデザイン) 
 
 //タブレット用デザインとして付け足すデザイン 
 
- @media (min-width: 768px) {}
+@media screen and (max-width: 899px){}
 
 //PC用デザインとして付け足すデザイン 
 
- @media (min-width: 1000px) {
-  }
+@media screen and (min-width: 900px) {}
