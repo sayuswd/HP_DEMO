@@ -1,9 +1,15 @@
 
 /*紹介　ダウンロード　採用　CSS　*/
 
-
-
 /*バックカラー　文字色 幅 各種設定*/
+
+$font_h1: 0.5em;
+$font_h2: 1.0em;
+$font_h3: 1.5em;
+
+$font_text_s: 0.5em;
+$font_text_m: 1.2em;
+$font_text_l: 2em;
 
 /* 共通css設定 */
 
@@ -12,8 +18,76 @@
 
 //タブレット用デザインとして付け足すデザイン 
 
-@media screen and (max-width: 899px){}
+@media screen and (max-width: 899px) {
+#contents .introduction_section1 {
+  margin: 50px;
+}
+#contents .introduction_img1_1 img {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+
+#contents .introduction_img1_2 {
+  padding-top: 150px;
+img {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+h3 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: $font_h3;
+}
+}
+#contents .introduction_section2 {
+  width: auto;
+  padding-top: 150px;
+img {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+}
+
+
+}
 
 //PC用デザインとして付け足すデザイン 
 
-@media screen and (min-width: 900px) {}
+@media screen and (min-width: 900px) {
+  #contents .introduction_section1 {
+    margin: 50px;
+  }
+  #contents .introduction_img1_1 img {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+  }
+  
+  #contents .introduction_img1_2 {
+    padding-top: 150px;
+  img {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+  }
+  h3 {
+    text-align: center;
+    font-size: $font_h3;
+  }
+  }
+  #contents .introduction_section2 {
+    width: auto;
+    padding-top: 150px;
+    margin-left:0px;
+    margin-right: 0px;
+  img {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+  }
+  }
+
+  }
