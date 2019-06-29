@@ -67,12 +67,16 @@ body {
 #contents h3 {
   color: $header_text;
 }
-
+/*採用実績設定*/
 #contents .adopted {
-  width: 600px;
-  background-color: #1A1A1A;
+  width: 650px;
+  height: auto;
+  text-align: center;
+  color: $sashiiro2;
+  background-color: $shadow;
   margin: 20px auto;
 }
+
 
 /* download_sectionsの設定　 */
 #contents .download_section1 img {
@@ -238,7 +242,7 @@ body {
 
 /* other_sectionsの設定　 */
 #contents .section4_setting {
-  @include sections( 100%, 490px, block, center);
+  @include sections( 100%, 600px, block, center);
   background-color: $sashiiro1;
   margin-top: $kankaku;
 }
@@ -444,7 +448,7 @@ body {
 }
 
 #contents .section3_setting {
-  @include sections( 100%, 350px, flex, center);
+  @include sections( 100%, 400px, flex, center);
   display: -webkit-flex;
   flex-direction: row;
   -webkit-justify-content: center;

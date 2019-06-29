@@ -1,7 +1,23 @@
 
 /*紹介　ダウンロード　採用　CSS　*/
 
+/*@mixin*/
+@mixin introduction_imgs ($width: 100%, $min-width: 320px, $height: auto) {
+  width: $width;
+  min-width: $min-width;
+  height: $height;
+}
+
 /*バックカラー　文字色 幅 各種設定*/
+
+$main_color: #e9eeee;
+$header_color:#848a8a;
+$header_select:#f8f9f9;
+$header_text:#3c3f3f;
+$sashiiro1:#bcc5c5;
+$sashiiro2:#68bdc5;
+$shadow:#3c3f3f;
+
 
 $font_h1: 0.5em;
 $font_h2: 1.0em;
@@ -11,83 +27,161 @@ $font_text_s: 0.5em;
 $font_text_m: 1.2em;
 $font_text_l: 2em;
 
+/*間隔設定*/
+$kankaku: 50px;
+
 /* 共通css設定 */
 
 
 //モバイルファースト (全環境に共通のデザイン) 
 
-//タブレット用デザインとして付け足すデザイン 
 
 @media screen and (max-width: 899px) {
+  /*紹介*/
 #contents .introduction_section1 {
-  margin: 50px;
+  margin: $kankaku;
 }
 #contents .introduction_img1_1 img {
-  width: 100%;
-  height: auto;
-  min-width: 320px;
+  @include introduction_imgs;
 }
 
 #contents .introduction_img1_2 {
-  padding-top: 150px;
+  margin-top: 100px;
 img {
-  width: 100%;
-  height: auto;
-  min-width: 320px;
+  @include introduction_imgs;
 }
 h3 {
   text-align: center;
-  margin-top: 100px;
+  margin-top: $kankaku;
+  margin-bottom: $kankaku;
   font-size: $font_h3;
 }
 }
 #contents .introduction_section2 {
   width: auto;
-  padding-top: 150px;
+  margin-top: 30px;
 img {
-  width: 100%;
-  height: auto;
-  min-width: 320px;
+  @include introduction_imgs;
+}
+}
+#contents .introduction_section3 {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+.introduction_img3_1 img {
+  @include introduction_imgs;
+}
+.introduction_img3_2 img {
+  @include introduction_imgs(30%, 150px, auto);
+  max-width: 150px;
 }
 }
 
+#contents .introduction_section4 {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+.introduction_sec4_title1 {
+  padding-top: 15px;
+}
+}
+/*採用実績*/
+#contents .adoption_allset h2 {
+  color: $header_text;
+}
+
+#contents .adoption_allset h3 {
+  color: $sashiiro2;
+}
+
+#contents .adoption_allset p {
+  color: $header_select;
+}
+
+#contents .setting {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+#contents .setting p {
+  margin: 15px;
+}
+
+#contents .adopted_lists_other {
+  display: inline-block;
+}
+
+#contents .adopted_lists_other1 {
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+}
 
 }
 
 //PC用デザインとして付け足すデザイン 
 
 @media screen and (min-width: 900px) {
+/*紹介*/
   #contents .introduction_section1 {
-    margin: 50px;
+    margin: $kankaku;
   }
   #contents .introduction_img1_1 img {
-    width: 100%;
-    height: auto;
-    min-width: 320px;
+    @include introduction_imgs;
   }
   
   #contents .introduction_img1_2 {
-    padding-top: 150px;
+    margin-top: 50px;
   img {
-    width: 100%;
-    height: auto;
-    min-width: 320px;
+    @include introduction_imgs;
   }
   h3 {
     text-align: center;
+//    margin-top: $kankaku;
+    margin-bottom: $kankaku;
     font-size: $font_h3;
   }
   }
   #contents .introduction_section2 {
     width: auto;
-    padding-top: 150px;
-    margin-left:0px;
-    margin-right: 0px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
   img {
-    width: 100%;
-    height: auto;
-    min-width: 320px;
+    @include introduction_imgs;
+  }
+  }
+  #contents .introduction_section3 {
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+  .introduction_img3_1 img {
+    @include introduction_imgs;
+    z-index: 1;
+  }
+  .introduction_img3_2 img {
+    @include introduction_imgs(30%, 150px, auto);
+    position: absolute;
+    max-width: 100px;
+    left: 69%;
+    top: 1680px;
+    z-index: 5;
+    border-radius: 50%;
+  }
+p {
+  margin-top: 90px;
+}
+  }
+  
+  #contents .introduction_section4 {
+    width: auto;
+    padding-top: $kankaku;
+    padding-bottom: 10px;
+  .introduction_sec4_title1 {
+    padding-top: 15px;
   }
   }
 
+  /*採用実績*/
   }
