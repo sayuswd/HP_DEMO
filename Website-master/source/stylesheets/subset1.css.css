@@ -87,6 +87,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #contents .adopted_other_setting {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 900px) {

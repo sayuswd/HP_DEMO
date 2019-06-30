@@ -127,6 +127,7 @@
     help_ue4: "UnrealEngine4でエフェクトを再生できるようにするプラグインのヘルプ"
 
     tutorial: "チュートリアル"
+    to_tutorial: "チュートリアルへ"
     tutorial_desc: "Effekseerのツールのチュートリアルです。一部の機能しか紹介していないので、詳しく知りたい方はリファレンスを参照お願いします。"
 
     quicktutorial: "クイックチュートリアル"

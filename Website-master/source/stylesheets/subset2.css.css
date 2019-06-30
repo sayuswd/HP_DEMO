@@ -1,4 +1,56 @@
 @charset "UTF-8";
-/*紹介　ダウンロード　採用　CSS　*/
+/*ドキュメント　サポート　サンプルエフェクト　開発　CSS　*/
 /*バックカラー　文字色 幅 各種設定*/
+/*間隔設定*/
+/*@mixin*/
 /* 共通css設定 */
+@media screen and (max-width: 899px) {
+  /*ドキュメント*/
+  #contents .documentation_top_set {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+  }
+  #contents .documentation_top_set h3 {
+    margin-top: 20px;
+  }
+  #contents .help_sections {
+    display: inline-block;
+    max-width: 350px;
+    min-width: 100px;
+    height: auto;
+    text-align: center;
+    background-color: #848a8a;
+    border-radius: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #contents .help_sections h2 {
+    color: #3c3f3f;
+  }
+  #contents .help_sections h3 {
+    color: #68bdc5;
+  }
+  #contents .help_sections p {
+    color: #f8f9f9;
+  }
+  #contents .help_sections img {
+    max-width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
+  #contents .documentation_tutorial_set {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #contents .documentation_tutorial_set h3 {
+    margin-top: 10px;
+  }
+}
