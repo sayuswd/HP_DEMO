@@ -1,28 +1,10 @@
 /*@import*/
-@import "subset1.css.scss";
-@import "subset2.css.scss";
-
-/*@mixin*/
-@mixin sections ($width: 100%, $max-height: 1000px, $display: inline-block, $text-align: center) {
-  width: $width;
-  max-height: $max-height;
-  display: $display;
-  text-align: $text-align;
-}
-
-/*バックカラー　文字色 幅 各種設定*/
-$main_color: #e9eeee;
-$header_color:#848a8a;
-$header_select:#f8f9f9;
-$header_text:#3c3f3f;
-$sashiiro1:#bcc5c5;
-$sashiiro2:#68bdc5;
-$shadow:#3c3f3f;
-
-/*間隔設定*/
-$kankaku: 50px;
+@import "subset.css.scss";
 
 /* header contens main 共通css設定 */
+/*紹介　ダウンロード　採用　CSS　*/
+/*ドキュメント　サポート　サンプルエフェクト　開発　CSS　*/
+
 body {
   background-color:$main_color;
   width: 100%;
@@ -43,6 +25,7 @@ body {
   background-position: left top;
   background-size:100% auto; 
   display: inline-block;
+  vertical-align:top;
   position: relative;
 }
 
@@ -86,9 +69,93 @@ body {
   height: auto;
 }
 
+/*サポートページのimg設定　*/
+#contents .supprot_section img {
+  width: 50%;
+  max-width: 50px;
+  min-width: 30px;
+  height: auto;
+  text-align: center;
+  margin-top: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/*開発ページ*/
+/*github リボン*/
+#contents .github_ribbon {
+  position: absolute;
+  top:6%;
+  right:0;
+  z-index: 999;
+}
+
+/*github リボン
+.main .github_ribbon {
+  .forkongithub {
+    background: #3c3f3f;
+    color: #848a8a;
+    text-decoration: none;
+    font-family:arial,sans-serif;
+    text-align:center;
+    font-weight:bold;
+    padding:5px 40px;
+    font-size:1rem;
+    line-height:2rem;
+    position:relative;
+    transition:0.5s;
+  }
+  .forkongithub a:hover {
+    background:#b1ffff;
+    color:#3c3f3f;
+  }
+  .forkongithub a::before,a::after {
+    content:"";
+    width:100%;
+    display:block;
+    position:absolute;
+    top:1px;
+    left:0;
+    height:1px;
+    background:#b1ffff;
+  }
+  .forkongithub a::after {
+    bottom:1px;
+    top:auto;
+  }
+@media screen and (min-width:500px) {
+  .forkongithub {
+    position:fixed;
+    display:block;
+    top:0;
+    right:0;
+    width:200px;
+    overflow:hidden;
+    height:200px;
+    z-index:9999;
+  }
+  .forkongithub a {
+    width:200px;
+    position:absolute;
+    top:60px;
+    right:-60px;
+    transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    box-shadow:4px 4px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .forkongithubspan {
+  top:100px;
+}
+}*/
+
 
 //モバイルファースト (全環境に共通のデザイン)
-@media screen and (max-width: 899px){
+@media screen and (max-width: 899px) {
+/*TOP*/
+
 #header {
   overflow: hidden;
   text-align: center;
@@ -98,17 +165,20 @@ body {
   
   .logo {
     display: inline-block;
+    vertical-align:top;
     margin: 0px 20px 0px 10px;
   }
   
   .selected {
     display: inline-block;
+    vertical-align:top;
     background-color: $header_select;
     padding: 0px 10px 1px 10px;
   }
   
   .unselected {
     display: inline-block;
+    vertical-align:top;
     padding: 0px 10px 1px 10px;
   }
   
@@ -162,6 +232,7 @@ body {
   border-radius: 5px;
   padding: 10px 20px 10px 20px;
   display: inline-block;
+  vertical-align:top;
   padding: 0.5em 1em;
   background: #bcc5c5;
   border-left: solid 15px #69bec6;
@@ -173,7 +244,8 @@ body {
 #contents .section1_setting {
   @include sections( 100%, 1000px, inline-block, center);
   background-color: $main_color;
-  margin-top: 0px;
+  margin-top: 20px;
+  vertical-align:top;
   -webkit-justify-content: center;
   justify-content: center;
 }
@@ -193,6 +265,7 @@ body {
   max-height: 500px;
   text-align: left;
   display: inline-block;
+  vertical-align:top;
   margin-top: 4%;
 }
 
@@ -203,7 +276,8 @@ body {
 
 /* MVの設定　 */
 #contents .section2_setting {
-  @include sections( 100%, 700px, inline-block, left);
+  @include sections( 100%, 700px, inline-block, center);
+  vertical-align:top;
   background-color: $sashiiro2;
   margin-top: $kankaku;
 }
@@ -293,7 +367,266 @@ body {
   margin-top: $kankaku;
   margin-bottom: 150px;
 }
+
+  /*紹介*/
+  #contents .introduction_section1 {
+    margin: $kankaku;
+  }
+  #contents .introduction_img1_1 img {
+    @include introduction_imgs;
+  }
+  
+  #contents .introduction_img1_2 {
+    margin-top: 100px;
+  img {
+    @include introduction_imgs;
+  }
+  h3 {
+    text-align: center;
+    margin-top: $kankaku;
+    margin-bottom: $kankaku;
+    font-size: $font_h3;
+  }
+  }
+  #contents .introduction_section2 {
+    width: auto;
+    margin-top: 30px;
+  img {
+    @include introduction_imgs;
+  }
+  }
+  #contents .introduction_section3 {
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  .introduction_img3_1 img {
+    @include introduction_imgs;
+  }
+  .introduction_img3_2 img {
+    @include introduction_imgs(30%, 150px, auto);
+    max-width: 150px;
+  }
+  }
+
+  /*ダウンロード*/
+  #contents .download_contents_topset{
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+  }
+
+  #contents .download_contents_set {
+    @include sections(100%,2500px,inline-block,center);
+    vertical-align:top;
+    background-color: #e9eeee;
+    
+  }
+
+  #contents .download_contents {
+    width: 350px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    background-color: $header_color;
+    border-radius: 3%;
+    margin: $kankaku2;
+  }
+  
+  #contents .introduction_section4 {
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  .introduction_sec4_title1 {
+    padding-top: 15px;
+  }
+  }
+  /*採用実績*/
+  #contents .adoption_allset h2 {
+    color: $header_text;
+  }
+  
+  #contents .adoption_allset h3 {
+    color: $sashiiro2;
+  }
+  
+  #contents .adoption_allset p {
+    color: $header_select;
+  }
+  
+  #contents .setting {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+  
+  #contents .setting p {
+    margin: 15px;
+  }
+  
+  #contents .adopted_lists_other {
+    display: inline-block;
+    vertical-align:top;
+  }
+  
+  #contents .adopted_lists_other1 {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+  }
+  
+  #contents .adopted_other_setting {
+    display: block;
+  }
+
+
+/*ドキュメント*/
+#contents .documentation_top_set {
+  @include sections_top_set;
+  margin-left: $kankaku;
+  margin-bottom:$kankaku2;
+h3 {
+  margin-top: $kankaku2;
 }
+} 
+
+  #contents .help_sections_set {
+    display: inline-block;
+    vertical-align:top;
+    text-align: center;
+  }
+
+  #contents .help_sections {
+    max-width: 255px;
+    min-width: 100px;
+    height: auto;
+    min-height: 300px;
+    background-color: $header_color;
+    border-radius: 2%;
+    margin: $kankaku2;
+  }
+
+  #contents .help_sections_set h2 {
+    color: $header_text;
+  }
+  
+  #contents .help_sections_set h3 {
+    color: $sashiiro2;
+  }
+  
+  #contents .help_sections_set p {
+    color: $header_select;
+  }
+
+  #contents .help_sections_set img {
+    max-width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#contents .documentation_tutorial_set {
+  @include sections_top_set;
+  background-color: $sashiiro2;
+  vertical-align:top;
+  margin-top: $kankaku;
+h3 {
+  margin-top: 10px;
+}
+} 
+
+#contents .section_setting_tutorial {
+  @include sections( 100%, auto, inline-block, center);
+  background-color: $sashiiro2;
+  vertical-align:top;
+}
+
+#contents .tutorial_sections {
+  display: inline-block;
+  vertical-align:top;
+  text-align: center;
+}
+
+#contents .locale_sections {
+  width: 300px;
+  height: auto;
+  min-height: 300px;
+  background-color: $header_color;
+  border-radius: 2%;
+  margin: $kankaku2;
+img {
+  width: 100%;
+  max-width: 150px;
+  min-width: 150px;
+  height: auto;
+  text-align: center;
+  margin-top:20px; 
+  margin-bottom: 20px;
+}
+}
+
+/*サポート*/
+#contents .section1_setting .supprot_section {
+  width: 100%;
+  display: inline-block;
+  vertical-align:top;
+}
+#contents .section1_setting .supprot_github_section {
+  text-align: center;
+}
+
+/*サンプルエフェクト*/
+#contents .contribute_title_set {
+  width: 100%;
+  text-align: center;
+  margin: $kankaku2;
+  }
+
+/*#contents .contribute_sample_effect {
+    @include sections(100%,2200px,inline-block,center);
+    vertical-align:top;
+  }*/
+
+#contents .sample_effect {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+  img {
+  width: 150px;
+  height: auto;
+  }
+}
+
+#contents .sample_effect2 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+
+  img {
+  width: 150px;
+  height: auto;
+  }
+}
+
+#contents .sample_effect p {
+  display: inline-block;
+  vertical-align:top;
+  background-color: $sashiiro1;
+  padding: $sen;
+  }
+
+  #contents .sample_effect2 p {
+    display: inline-block;
+    vertical-align:top;
+    background-color: $sashiiro2;
+    padding: $sen;
+    }
+
+
+
+}
+
+
 
 
 //
@@ -303,13 +636,14 @@ body {
 //PC用デザインとして付け足すデザイン
 //
 @media screen and (min-width: 900px) {
-
+/*TOP*/
 #header {
   overflow: hidden;
   text-align: center;
   display: block;
   background-color:$header_color;
   font-size: $font_text_m;
+  z-index: 1;
 }
 
 #header .logo {
@@ -378,6 +712,7 @@ body {
   border-radius: 5px;
   padding: 10px 20px 10px 20px;
   display: inline-block;
+  vertical-align:top;
   padding: 0.5em 1em;
   background: #bcc5c5;
   border-left: solid 15px #69bec6;
@@ -386,7 +721,7 @@ body {
 }
 
 /* sec2の画像３枚の設定　 */
-#contents .section1_setting{
+#contents .section1_setting {
   @include sections( 100%, auto, flex, center);
   display: -webkit-flex;
   -webkit-justify-content: center;
@@ -584,4 +919,178 @@ body {
   margin-bottom: 100px;
   text-align: center;
 }
+
+/*紹介*/
+#contents .introduction_section1 {
+  margin: $kankaku;
+}
+#contents .introduction_img1_1 img {
+  @include introduction_imgs;
+}
+
+#contents .introduction_img1_2 {
+  margin-top: 50px;
+img {
+  @include introduction_imgs;
+}
+h3 {
+  text-align: center;
+  margin-bottom: $kankaku;
+  font-size: $font_h3;
+}
+}
+#contents .introduction_section2 {
+  width: auto;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+img {
+  @include introduction_imgs;
+}
+}
+#contents .introduction_section3 {
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+.introduction_img3_1 img {
+  @include introduction_imgs;
+  z-index: 1;
+}
+.introduction_img3_2 img {
+  @include introduction_imgs(30%, 150px, auto);
+  position: absolute;
+  max-width: 100px;
+  left: 69%;
+  top: 1680px;
+  z-index: 5;
+  border-radius: 50%;
+}
+p {
+margin-top: 90px;
+}
+}
+
+#contents .introduction_section4 {
+  width: auto;
+  padding-top: $kankaku;
+  padding-bottom: 10px;
+.introduction_sec4_title1 {
+  padding-top: 15px;
+}
+}
+
+/*ダウンロード*/
+#contents .download_contents_topset{
+  width: 100%;
+  text-align: left;
+  margin-left: 50px;
+  }
+
+  #contents .download_contents_set {
+    @include sections(100%,2200px,inline-block,center);
+    background-color: #e9eeee;
+    vertical-align:top;
+  }
+
+  #contents .download_contents {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    background-color: $header_color;
+    border-radius: 3%;
+    margin: $kankaku2;
+  }
+  
+
+
+/*採用実績
+PC未設定*/
+
+/*ドキュメント*/
+#contents .documentation_top_set {
+  @include sections_top_set;
+  margin-left: $kankaku;
+  margin-bottom:$kankaku2;
+h3 {
+  margin-top: $kankaku2;
+}
+} 
+
+  #contents .help_sections_set {
+    vertical-align:top;
+    display: inline-block;
+    text-align: center;
+
+    margin: $kankaku;
+  }
+
+  #contents .help_sections {
+    max-width: 500px;
+    min-width: 300px;
+    height: auto;
+    min-height: 300px;
+    background-color: $header_color;
+    border-radius: 2%;
+  }
+
+  #contents .help_sections_set h2 {
+    color: $header_text;
+  }
+  
+  #contents .help_sections_set h3 {
+    color: $sashiiro2;
+  }
+  
+  #contents .help_sections_set p {
+    color: $header_select;
+  }
+
+  #contents .help_sections_set img {
+    max-width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#contents .documentation_tutorial_set {
+  @include sections_top_set;
+  margin-top: $kankaku;
+  vertical-align:top;
+h3 {
+  margin-top: 10px;
+}
+} 
+
+#contents .section_setting_tutorial {
+  @include sections( 100%, auto, inline-block, center);
+  vertical-align:top;
+  background-color: $sashiiro2;
+  margin: 0px;
+}
+
+#contents .tutorial_sections {
+  vertical-align:top;
+  display: inline-block;
+  text-align: center;
+}
+
+#contents .locale_sections {
+  width: 300px;
+  height: 300px;
+  background-color: $header_color;
+  border-radius: 2%;
+  margin: $kankaku;
+img {
+  width: 100%;
+  max-width: 150px;
+  min-width: 150px;
+  text-align: center;
+  height: auto;
+  margin-top:20px; 
+  margin-bottom: 20px;
+}
+}
+
 }

@@ -6,37 +6,63 @@ kind: support
 #contents
   .inner
     .main
-      h2 =t(:support_header)
 
-      p =t('support.content_1')
+      .github_ribbon
+        style
+          | #forkongithub a{background:#83c3f3f;color:#848a8a;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#b1ffff;color:#3c3f3f;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#b1ffff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:500px){#forkongithub{position:fixed;display:block;top:50px;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}
+        span#forkongithub
+          a href="https://github.com/codepo8/css-fork-on-github-ribbon"
+            | Fork me on GitHub
 
-      p =t('support.content_2')
+      .section1_setting
+        .supprot_section
+          h2 =t(:support_header)
 
-      p =t('support.content_3')
+          p =t('support.content_1')
 
-      p
-        a href="https://twitter.com/Effekseer_En" Twitter(English)
+          p =t('support.content_2')
 
-      p
-        a href="https://twitter.com/Effekseer" Twitter(Japanese)
+          p =t('support.content_3')
 
-      p
-        a href="https://github.com/effekseer/Effekseer/issues" github(issues)
+          p
+            a href="https://twitter.com/Effekseer_En"
+              img src="/images/Twitter_Social_Icon_Circle_Color.png"
+            a href="https://twitter.com/Effekseer_En" Twitter(English)
 
-      p
-        a href="https://discord.gg/RChKvhu" Discord
+          p
+            a href="https://twitter.com/Effekseer"
+              img src="/images/Twitter_Social_Icon_Circle_Color.png"
+            a href="https://twitter.com/Effekseer" Twitter(Japanese)
 
-      p
-        a href="https://effekseer-slackin.herokuapp.com/" Slack  
+          p
+            a href="https://github.com/effekseer/Effekseer/issues"
+              img src="/images/GitHub-Mark-64px.png"
+            a href="https://github.com/effekseer/Effekseer/issues" github(issues)
 
-      h3 =t('support.github')
+          p
+            a href="https://discord.gg/RChKvhu"
+              img src="/images/icons8-discord-50.png"
+            a href="https://discord.gg/RChKvhu" Discord
 
-      p =t('support.github_content')
 
-      a href="https://github.com/effekseer/Effekseer" Github
+          p
+            a href="https://effekseer-slackin.herokuapp.com/"
+              img src="/images/Slack Mark Web.png"
+            a href="https://effekseer-slackin.herokuapp.com/" Slack 
+
+
+      .section2_setting
+        .supprot_github_section
+          h3 =t('support.github')
+          
+          p =t('support.github_content')
+            a href="https://github.com/effekseer/Effekseer" Github
       
-      h3 =t('support.mail')
 
-      p =t('support.mail_content')
+      .section3_setting
+        .support_mail_section
+          h3 =t('support.mail')
 
-      p effekseer(at)gmail.com
+          p =t('support.mail_content')
+
+          p effekseer(at)gmail.com
