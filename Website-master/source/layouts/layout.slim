@@ -29,10 +29,7 @@ html
 
 
   == stylesheet_link_tag "base"
-  == stylesheet_link_tag "drawer"
   == javascript_include_tag "jquery/jquery.min.js"
-  == javascript_include_tag "iscroll.min.js"
-  == javascript_include_tag "drawer.min.js"
   == javascript_include_tag "base.js"
 
   body class="#{page_classes}"
@@ -109,16 +106,14 @@ html
           .unselected
             a href="contribute.html"
               h1 =t(:contribute_header)
-    
-        - if current_page.data.kind=="development"
-          .selected
-            a href="development.html"
-              h1 =t(:development_header)
-        - else
-          .unselected
-            a href="development.html"
-              h1 =t(:development_header)
-    
+
+      
+      .github_ribbon
+        span.forkongithub
+          a href="https://github.com/effekseer/Effekseer"
+            | Fork me on GitHub 
+
+
 
     .language
       .language_menu
