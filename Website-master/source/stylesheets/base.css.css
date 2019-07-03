@@ -63,7 +63,7 @@ body {
 }
 
 /*サポートページのimg設定　*/
-#contents .supprot_section img {
+#contents .support_grid img {
   width: 50%;
   max-width: 50px;
   min-width: 30px;
@@ -426,6 +426,8 @@ body {
   /*採用実績設定*/
   #contents .adopted {
     width: 100%;
+    min-width: 350px;
+    max-width: 550px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -434,14 +436,17 @@ body {
     padding-bottom: 20px;
   }
   #contents .iframe {
-    height: 0px;
     position: relative;
-    padding-bottom: 56.25%;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
   }
   .iframe_container {
-    widows: 100%;
-    height: 100%;
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
   }
@@ -560,13 +565,22 @@ body {
     margin-bottom: 20px;
   }
   /*サポート*/
-  #contents .section1_setting .supprot_section {
+  #contents .supprot_section {
     width: 100%;
     display: inline-block;
     vertical-align: top;
   }
-  #contents .section1_setting .supprot_github_section {
+  #contents .supprot_github_section {
     text-align: center;
+  }
+  #contents .support_grid {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+  }
+  #contents .support_grid p {
+    margin: 30px;
   }
   /*サンプルエフェクト*/
   #contents .contribute_title_set {
@@ -961,36 +975,76 @@ body {
   /*採用実績*/
   /*採用実績設定*/
   #contents .adopted {
-    width: 800px;
-    height: 500px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     text-align: center;
     color: #68bdc5;
     background-color: #3c3f3f;
     margin: 20px auto;
+    padding-bottom: 20px;
+  }
+  #contents .iframe {
+    position: relative;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+  }
+  .iframe_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   #contents .adoption_allset h2 {
     color: #3c3f3f;
   }
   #contents .adoption_allset h3 {
     color: #68bdc5;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 20px;
   }
   #contents .adoption_allset p {
     color: #f8f9f9;
   }
   #contents .setting {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
+    margin-left: 20px;
   }
   #contents .setting1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
+    margin-left: 20px;
   }
   #contents .setting p {
     margin: 15px;
+  }
+  #contents .list1_site {
+    display: flex;
+  }
+  #contents .list1_site p {
+    margin: 20px;
+  }
+  #contents .list1_steam {
+    display: flex;
+  }
+  #contents .list1_steam p {
+    margin: 15px;
+  }
+  #contents .list1_mv {
+    display: flex;
+  }
+  #contents .list1_mv p {
+    margin: 5px;
   }
   #contents .adopted_other_setting {
     display: inline-block;
@@ -1082,7 +1136,14 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  /*サポートは他の設定代用必要時追加*/
+  /*サポート*/
+  #contents .support_grid {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
   /*サンプルエフェクト*/
   #contents .contribute_title_set {
     width: 100%;

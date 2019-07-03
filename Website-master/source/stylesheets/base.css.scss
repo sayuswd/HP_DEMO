@@ -62,7 +62,7 @@ body {
 }
 
 /*サポートページのimg設定　*/
-#contents .supprot_section img {
+#contents .support_grid img {
   width: 50%;
   max-width: 50px;
   min-width: 30px;
@@ -138,8 +138,6 @@ body {
 //モバイルファースト (全環境に共通のデザイン)
 @media screen and (max-width: 899px) {
 /*TOP*/
-
-
 
 #header {
   overflow: hidden;
@@ -357,15 +355,15 @@ body {
   margin-bottom: 150px;
 }
 
-  /*紹介*/
-  #contents .introduction_section1 {
+/*紹介*/
+#contents .introduction_section1 {
     margin: $kankaku;
   }
-  #contents .introduction_img1_1 img {
+#contents .introduction_img1_1 img {
     @include introduction_imgs;
   }
-  
-  #contents .introduction_img1_2 {
+
+#contents .introduction_img1_2 {
     margin-top: 100px;
   img {
     @include introduction_imgs;
@@ -377,14 +375,14 @@ body {
     font-size: $font_h3;
   }
   }
-  #contents .introduction_section2 {
+#contents .introduction_section2 {
     width: auto;
     margin-top: 30px;
   img {
     @include introduction_imgs;
   }
   }
-  #contents .introduction_section3 {
+#contents .introduction_section3 {
     width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -397,21 +395,21 @@ body {
   }
   }
 
-  /*ダウンロード*/
+/*ダウンロード*/
   #contents .download_contents_topset{
   width: 100%;
   text-align: left;
   margin-left: 50px;
   }
 
-  #contents .download_contents_set {
+#contents .download_contents_set {
     @include sections(100%,2500px,inline-block,center);
     vertical-align:top;
     background-color: #e9eeee;
     
   }
 
-  #contents .download_contents {
+#contents .download_contents {
     width: 350px;
     height: auto;
     text-align: center;
@@ -421,7 +419,7 @@ body {
     margin: $kankaku2;
   }
   
-  #contents .introduction_section4 {
+#contents .introduction_section4 {
     width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -433,6 +431,8 @@ body {
   /*採用実績設定*/
 #contents .adopted {
   width: 100%;
+  min-width: 350px;
+  max-width: 550px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -442,61 +442,62 @@ body {
 }
 
 #contents .iframe {
-  height: 0px;
   position: relative;
-  padding-bottom: 56.25%;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%
 }
 
 .iframe_container {
-  widows: 100%;
-  height: 100%;
   position: absolute;
-  top:0;
-  left:0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
-  #contents .adoption_allset h2 {
+#contents .adoption_allset h2 {
     color: $header_text;
   }
-  
-  #contents .adoption_allset h3 {
+
+#contents .adoption_allset h3 {
     color: $sashiiro2;
   }
   
-  #contents .adoption_allset p {
+#contents .adoption_allset p {
     color: $header_select;
   }
   
-  #contents .setting {
+#contents .setting {
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     margin-top: 10px;
   }
 
-  #contents .setting1 {
+#contents .setting1 {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     text-align: center;
     margin-top: 10px;
   }
-  
-  #contents .setting p {
+
+#contents .setting p {
     margin: 15px;
   }
   
-  #contents .adopted_other_setting {
+#contents .adopted_other_setting {
     display: inline-block;
     vertical-align:top;
   }
   
-  #contents .adopted_lists_other1 {
+#contents .adopted_lists_other1 {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-row-gap:10px;
     grid-column-gap: 10px;
   }
-
-
 
 /*ドキュメント*/
 #contents .documentation_top_set {
@@ -508,13 +509,13 @@ h3 {
 }
 } 
 
-  #contents .help_sections_set {
+#contents .help_sections_set {
     display: inline-block;
     vertical-align:top;
     text-align: center;
   }
 
-  #contents .help_sections {
+#contents .help_sections {
     max-width: 255px;
     min-width: 100px;
     height: auto;
@@ -524,19 +525,19 @@ h3 {
     margin: $kankaku2;
   }
 
-  #contents .help_sections_set h2 {
+#contents .help_sections_set h2 {
     color: $header_text;
   }
   
-  #contents .help_sections_set h3 {
+#contents .help_sections_set h3 {
     color: $sashiiro2;
   }
   
-  #contents .help_sections_set p {
+#contents .help_sections_set p {
     color: $header_select;
   }
 
-  #contents .help_sections_set img {
+#contents .help_sections_set img {
     max-width: 100%;
     max-width: 100px;
     height: auto;
@@ -584,13 +585,24 @@ img {
 }
 
 /*サポート*/
-#contents .section1_setting .supprot_section {
+#contents .supprot_section {
   width: 100%;
   display: inline-block;
   vertical-align:top;
 }
-#contents .section1_setting .supprot_github_section {
+
+#contents .supprot_github_section {
   text-align: center;
+}
+
+#contents .support_grid {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: inline-block;
+  p{
+    margin: 30px;
+  }
 }
 
 /*サンプルエフェクト*/
@@ -631,7 +643,7 @@ img {
   padding-right: $sen;
   }
 
-  #contents .sample_effect2 p {
+#contents .sample_effect2 p {
     display: inline-block;
     vertical-align:top;
     background-color: $sashiiro2;
@@ -640,17 +652,11 @@ img {
     padding-right: $sen;
     }
 
-
-
 }
-
-
-
 
 //
 //PC版に必要なSASS↓
 //
-
 //PC用デザインとして付け足すデザイン
 //
 @media screen and (min-width: 900px) {
@@ -775,7 +781,6 @@ img {
   max-height: 500px;
 }
 
-
 /* MVの設定　 */
 #contents .section2_setting {
   @include sections( 100%, 450px, flex, center);
@@ -821,7 +826,6 @@ img {
   font-size: $font_text_l;
 }
 
-
 #contents .download_section2 {
   width: 300px;
   height: auto;
@@ -850,7 +854,6 @@ img {
   text-align: left;
   margin: 30px;
 }
-
 
 /* other_sectionsの設定　 */
 #contents .section4_setting {
@@ -1005,13 +1008,13 @@ margin-top: 90px;
   margin-left: 50px;
   }
 
-  #contents .download_contents_set {
+#contents .download_contents_set {
     @include sections(100%,2200px,inline-block,center);
     background-color: #e9eeee;
     vertical-align:top;
   }
 
-  #contents .download_contents {
+#contents .download_contents {
     width: 100%;
     max-width: 850px;
     height: auto;
@@ -1025,50 +1028,94 @@ margin-top: 90px;
   /*採用実績*/
   /*採用実績設定*/
 #contents .adopted {
-  width: 800px;
-  height: 500px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
   text-align: center;
   color: $sashiiro2;
   background-color: $shadow;
   margin: 20px auto;
+  padding-bottom: 20px;
 }
 
-  #contents .adoption_allset h2 {
+#contents .iframe {
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%
+}
+
+.iframe_container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#contents .adoption_allset h2 {
     color: $header_text;
   }
   
-  #contents .adoption_allset h3 {
+#contents .adoption_allset h3 {
     color: $sashiiro2;
+    font-size: $font_h3;
+    text-align: left;
+    margin-left: 20px;
   }
   
-  #contents .adoption_allset p {
+#contents .adoption_allset p {
     color: $header_select;
   }
   
-  #contents .setting {
+#contents .setting {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows:1fr 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
+    margin-left: 20px;
   }
   
-  #contents .setting1 {
+#contents .setting1 {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows:1fr 1fr;
+    text-align: left;
     margin-top: 10px;
+    margin-left: 20px;
   }
   
-  #contents .setting p {
+#contents .setting p {
     margin: 15px;
   }
-  
-  #contents .adopted_other_setting {
+#contents .list1_site {
+  display: flex;
+  p {
+    margin:20px;
+  }
+}
+#contents .list1_steam {
+  display: flex;
+  p {
+    margin:15px;
+  }
+}
+
+#contents .list1_mv {
+  display: flex;
+  p {
+    margin:5px;
+  }
+}
+
+
+#contents .adopted_other_setting {
     display: inline-block;
     vertical-align:top;
   }
   
-  #contents .adopted_lists_other1 {
+#contents .adopted_lists_other1 {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     grid-row-gap:10px;
@@ -1085,7 +1132,7 @@ h3 {
 }
 } 
 
-  #contents .help_sections_set {
+#contents .help_sections_set {
     vertical-align:top;
     display: inline-block;
     text-align: center;
@@ -1093,7 +1140,7 @@ h3 {
     margin: $kankaku;
   }
 
-  #contents .help_sections {
+#contents .help_sections {
     max-width: 500px;
     min-width: 300px;
     height: auto;
@@ -1102,19 +1149,19 @@ h3 {
     border-radius: 2%;
   }
 
-  #contents .help_sections_set h2 {
+#contents .help_sections_set h2 {
     color: $header_text;
   }
   
-  #contents .help_sections_set h3 {
+#contents .help_sections_set h3 {
     color: $sashiiro2;
   }
   
-  #contents .help_sections_set p {
+#contents .help_sections_set p {
     color: $header_select;
   }
 
-  #contents .help_sections_set img {
+#contents .help_sections_set img {
     max-width: 100%;
     max-width: 100px;
     height: auto;
@@ -1159,8 +1206,16 @@ img {
   margin-bottom: 20px;
 }
 }
-/*サポートは他の設定代用必要時追加*/
+/*サポート*/
 
+
+#contents .support_grid {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+}
 
 /*サンプルエフェクト*/
 #contents .contribute_title_set {
@@ -1200,7 +1255,7 @@ img {
   padding-right: $sen;
   }
 
-  #contents .sample_effect2 p {
+#contents .sample_effect2 p {
     display: inline-block;
     vertical-align:top;
     background-color: $sashiiro2;
