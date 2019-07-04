@@ -37,10 +37,10 @@ html
       .logo
         - if current_page.data.kind!="effekseer"
           a href="index.html"
-            img src="/images/Logo.png" alt="Logo" align="middle"
+            img src="/images/top_logo.png" alt="Logo" align="middle"
         - else
           a href="../../index.html"
-            img src="/images/Logo.png" alt="Logo" align="middle"
+            img src="/images/top_logo.png" alt="Logo" align="middle"
 
       - if current_page.data.kind!="effekseer"
         
@@ -116,12 +116,16 @@ html
 
 
     .language
-      .language_menu
-        ul
-          li
-            a.drawer-brand href="/jp/index.html" 日本語
-          li
-            a.drawer-menu-item href="/en/index.html" English
-          li
-            a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
+        .language_menu
+          ul.nav
+            li 
+              img src="/images/world10.png"
+              p Select Language
+              ul
+                li
+                  a.drawer-brand href="/jp/index.html" 日本語
+                li
+                  a.drawer-menu-item href="/en/index.html" English
+                li
+                  a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
         == yield

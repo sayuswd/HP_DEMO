@@ -1,14 +1,10 @@
-/*
 $(function () {
-  $('.drawer').drawer({
-    iscroll: {
-      scrollX: false,
-      scrollY: true,
-      click: true,
-      mouseWheel: true,
-      disablePointer: true,
-      disableTouch: false,
-      disableMouse: false
-    },
-  });
-});*/
+  var nav = $('.nav');
+  $('li', nav)
+    .mouseover(function (e) {
+      $('ul', this).stop().slideDown('fast');
+    })
+    .mouseout(function (e) {
+      $('ul', this).stop().slideUp('fast');
+    });
+});

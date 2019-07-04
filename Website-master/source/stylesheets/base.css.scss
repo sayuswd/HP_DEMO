@@ -11,6 +11,66 @@ body {
   margin: 0px auto;
 }
 
+/*language 言語選択設定*/
+.language_menu {
+  z-index: 9999;
+  text-align: center;
+}
+
+.language_menu .nav {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  p{
+    font-size: $font_h1;
+    margin: 5px;
+  }
+}
+
+.language_menu .nav li {
+  list-style: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
+.language_menu .nav li a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2.8;
+  background: $sashiiro2;
+  text-decoration: none;
+  border-right: 1px solid #eee;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+
+.language_menu .nav li ul {
+  width: 100px;
+  display: none;
+  margin-left: -40px;
+  position: absolute;
+  z-index: 9999;
+}
+
+.nav > li li:hover > a {/*layer-2*/
+  color: $header_text;
+  background: $sashiiro2;
+}
+
+/**/
+#header .logo img {
+  widows: 50px;
+  height: 50px;
+}
+
+
 /* main設定　 */
 #contents {
   width: auto;
@@ -20,7 +80,7 @@ body {
 #contents .eyecatch {
   width: 100%;
   height: 400px;
-  margin: 50px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
   background: url("/source/images/effects1_1.png") no-repeat;
   background-position: left top;
   background-size:100% auto; 
@@ -30,6 +90,8 @@ body {
 }
 
 /* Top画面のボタンの設定　 */
+
+
 #contents .eyecatch a:hover {
   color: #b1ffff;
 }
