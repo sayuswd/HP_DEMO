@@ -429,7 +429,32 @@ body {
   }
   /*採用実績*/
   /*採用実績設定*/
+
+  #contents .adoption_allset h2 {
+    color: $header_text;
+  }
+
+#contents .adoption_allset h3 {
+    color: $sashiiro2;
+  }
+  
+#contents .adoption_allset p {
+    color: $header_select;
+  }
+  
 #contents .adopted {
+  width: 100%;
+  min-width: 350px;
+  max-width: 550px;
+  height: auto;
+  text-align: center;
+  color: $sashiiro2;
+  background-color: $shadow;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+
+#contents .adopted1 {
   width: 100%;
   min-width: 350px;
   max-width: 550px;
@@ -458,33 +483,48 @@ body {
   left: 0;
 }
 
-#contents .adoption_allset h2 {
-    color: $header_text;
-  }
+#contents .images_adopted img {
+  width: 100%;
+  height: auto;
+}
 
-#contents .adoption_allset h3 {
-    color: $sashiiro2;
-  }
-  
-#contents .adoption_allset p {
-    color: $header_select;
-  }
-  
 #contents .setting {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
   }
 
 #contents .setting1 {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows:1fr 1fr;
+    text-align: left;
     margin-top: 10px;
   }
 
 #contents .setting p {
     margin: 15px;
+  }
+
+#contents .list1_site {
+    display: flex;
+    p {
+      margin:20px;
+    }
+  }
+#contents .list1_steam {
+    display: flex;
+    p {
+      margin:15px;
+    }
+  }
+  
+#contents .list1_mv {
+    display: flex;
+    margin-top: 10px;
+    p {
+      margin:5px;
+    }
   }
   
 #contents .adopted_other_setting {
@@ -1027,9 +1067,48 @@ margin-top: 90px;
   
   /*採用実績*/
   /*採用実績設定*/
+
+  #contents .adoption_allset {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #contents .adoption_allset h2 {
+      color: $header_text;
+    }
+    
+  #contents .adoption_allset h3 {
+      color: $sashiiro2;
+      font-size: $font_h3;
+      text-align: left;
+      margin-left: $M_left;
+    }
+    
+  #contents .adoption_allset p {
+      color: $header_select;
+    }
+    
+
+  #contents .adoptition_title {
+    text-align: left;
+    margin-left: $kankaku;
+  }
+
 #contents .adopted {
   width: 100%;
-  max-width: 800px;
+  max-width: 560px;
+  height: 650px;
+  color: $sashiiro2;
+  background-color: $shadow;
+  margin: 20px auto;
+  padding-bottom: 20px;
+  vertical-align:top;
+  display: inline-block;
+}
+
+#contents .adopted1 {
+  width: 100%;
+  max-width: 950px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -1037,6 +1116,7 @@ margin-top: 90px;
   margin: 20px auto;
   padding-bottom: 20px;
 }
+
 
 #contents .iframe {
   position: relative;
@@ -1055,27 +1135,22 @@ margin-top: 90px;
   left: 0;
 }
 
-#contents .adoption_allset h2 {
-    color: $header_text;
+#contents .images_adopted {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  img {
+    width: 560px;
+    height: 315px;
   }
-  
-#contents .adoption_allset h3 {
-    color: $sashiiro2;
-    font-size: $font_h3;
-    text-align: left;
-    margin-left: 20px;
-  }
-  
-#contents .adoption_allset p {
-    color: $header_select;
-  }
-  
+}
+
+
 #contents .setting {
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
     text-align: left;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: $M_left;
   }
   
 #contents .setting1 {
@@ -1083,7 +1158,7 @@ margin-top: 90px;
     grid-template-rows:1fr 1fr;
     text-align: left;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: $M_left;
   }
   
 #contents .setting p {
@@ -1104,6 +1179,7 @@ margin-top: 90px;
 
 #contents .list1_mv {
   display: flex;
+  margin-top: 10px;
   p {
     margin:5px;
   }
@@ -1113,6 +1189,7 @@ margin-top: 90px;
 #contents .adopted_other_setting {
     display: inline-block;
     vertical-align:top;
+    margin-left: 10px;
   }
   
 #contents .adopted_lists_other1 {
@@ -1207,8 +1284,6 @@ img {
 }
 }
 /*サポート*/
-
-
 #contents .support_grid {
   width: 100%;
   height: auto;
@@ -1220,7 +1295,7 @@ img {
 /*サンプルエフェクト*/
 #contents .contribute_title_set {
   width: 100%;
-  text-align: center;
+  text-align: left;
   margin: $kankaku2;
   }
 

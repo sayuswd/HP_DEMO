@@ -424,7 +424,27 @@ body {
   }
   /*採用実績*/
   /*採用実績設定*/
+  #contents .adoption_allset h2 {
+    color: #3c3f3f;
+  }
+  #contents .adoption_allset h3 {
+    color: #68bdc5;
+  }
+  #contents .adoption_allset p {
+    color: #f8f9f9;
+  }
   #contents .adopted {
+    width: 100%;
+    min-width: 350px;
+    max-width: 550px;
+    height: auto;
+    text-align: center;
+    color: #68bdc5;
+    background-color: #3c3f3f;
+    margin: 20px auto;
+    padding-bottom: 20px;
+  }
+  #contents .adopted1 {
     width: 100%;
     min-width: 350px;
     max-width: 550px;
@@ -450,28 +470,43 @@ body {
     top: 0;
     left: 0;
   }
-  #contents .adoption_allset h2 {
-    color: #3c3f3f;
-  }
-  #contents .adoption_allset h3 {
-    color: #68bdc5;
-  }
-  #contents .adoption_allset p {
-    color: #f8f9f9;
+  #contents .images_adopted img {
+    width: 100%;
+    height: auto;
   }
   #contents .setting {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
   }
   #contents .setting1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    text-align: left;
     margin-top: 10px;
   }
   #contents .setting p {
     margin: 15px;
+  }
+  #contents .list1_site {
+    display: flex;
+  }
+  #contents .list1_site p {
+    margin: 20px;
+  }
+  #contents .list1_steam {
+    display: flex;
+  }
+  #contents .list1_steam p {
+    margin: 15px;
+  }
+  #contents .list1_mv {
+    display: flex;
+    margin-top: 10px;
+  }
+  #contents .list1_mv p {
+    margin: 5px;
   }
   #contents .adopted_other_setting {
     display: inline-block;
@@ -974,9 +1009,40 @@ body {
   }
   /*採用実績*/
   /*採用実績設定*/
+  #contents .adoption_allset {
+    width: 100%;
+    text-align: center;
+  }
+  #contents .adoption_allset h2 {
+    color: #3c3f3f;
+  }
+  #contents .adoption_allset h3 {
+    color: #68bdc5;
+    font-size: 1.5em;
+    text-align: left;
+    margin-left: 20px;
+  }
+  #contents .adoption_allset p {
+    color: #f8f9f9;
+  }
+  #contents .adoptition_title {
+    text-align: left;
+    margin-left: 50px;
+  }
   #contents .adopted {
     width: 100%;
-    max-width: 800px;
+    max-width: 560px;
+    height: 650px;
+    color: #68bdc5;
+    background-color: #3c3f3f;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  #contents .adopted1 {
+    width: 100%;
+    max-width: 950px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -999,17 +1065,13 @@ body {
     top: 0;
     left: 0;
   }
-  #contents .adoption_allset h2 {
-    color: #3c3f3f;
+  #contents .images_adopted {
+    margin-top: 3em;
+    margin-bottom: 2em;
   }
-  #contents .adoption_allset h3 {
-    color: #68bdc5;
-    font-size: 1.5em;
-    text-align: left;
-    margin-left: 20px;
-  }
-  #contents .adoption_allset p {
-    color: #f8f9f9;
+  #contents .images_adopted img {
+    width: 560px;
+    height: 315px;
   }
   #contents .setting {
     display: grid;
@@ -1042,6 +1104,7 @@ body {
   }
   #contents .list1_mv {
     display: flex;
+    margin-top: 10px;
   }
   #contents .list1_mv p {
     margin: 5px;
@@ -1049,6 +1112,7 @@ body {
   #contents .adopted_other_setting {
     display: inline-block;
     vertical-align: top;
+    margin-left: 10px;
   }
   #contents .adopted_lists_other1 {
     display: grid;
@@ -1147,7 +1211,7 @@ body {
   /*サンプルエフェクト*/
   #contents .contribute_title_set {
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin: 20px;
   }
   #contents .sample_effect {
