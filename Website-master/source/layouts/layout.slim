@@ -42,90 +42,139 @@ html
           a href="../../index.html"
             img src="/images/top_logo.png" alt="Logo" align="middle"
 
-      - if current_page.data.kind!="effekseer"
-        
-        - if current_page.data.kind=="top"
-          .selected
+      .nav-toggle
+        .menu-trigger[href="#"]
+          span
+          span
+          span
+
+      .menunav_allset
+
+        .logo_menu
+          - if current_page.data.kind!="effekseer"
             a href="index.html"
-              h1 =t(:top_header)
-        - else
-          .unselected
-            a href="index.html"
-              h1 =t(:top_header)
+              img src="/images/top_logo.png" alt="Logo" align="middle"
+          - else
+            a href="../../index.html"
+              img src="/images/top_logo.png" alt="Logo" align="middle"
 
-        - if current_page.data.kind=="introduction"
-          .selected
-            a href="introduction.html"
-              h1 =t(:introduction_header)
-        - else
-          .unselected
-            a href="introduction.html"
-              h1 =t(:introduction_header)
 
-        - if current_page.data.kind=="download"
-          .selected
-            a href="download.html"
-              h1 =t(:download_header)
-        - else
-          .unselected
-            a href="download.html"
-              h1 =t(:download_header)
+        - if current_page.data.kind!="effekseer"
 
-        - if current_page.data.kind=="adoption"
-          .selected
-            a href="adoption.html"
-              h1 =t(:adoption_header)
-        - else
-          .unselected
-            a href="adoption.html"
-              h1 =t(:adoption_header)
+          - if current_page.data.kind=="top"
 
-        - if current_page.data.kind=="documentation"
-          .selected
-            a href="documentation.html"
-              h1 =t(:documentation_header)
-        - else
-          .unselected
-            a href="documentation.html"
-              h1 =t(:documentation_header)
+              .selected
+                ul
 
-        - if current_page.data.kind=="support"
-          .selected
-            a href="support.html"
-              h1 =t(:support_header)
-        - else
-          .unselected
-            a href="support.html"
-              h1 =t(:support_header)
+                  li
+                    a href="index.html"
+                      h1 =t(:top_header)
+          - else
+              .unselected
+                ul
+                  li
+                    a href="index.html"
+                      h1 =t(:top_header)
 
-        - if current_page.data.kind=="contribute"
-          .selected
-            a href="contribute.html"
-              h1 =t(:contribute_header)
-        - else
-          .unselected
-            a href="contribute.html"
-              h1 =t(:contribute_header)
+          - if current_page.data.kind=="introduction"
+            .selected
+                  li
+                    a href="introduction.html"
+                      h1 =t(:introduction_header)
+          - else
+            .unselected
+                  li
+                    a href="introduction.html"
+                      h1 =t(:introduction_header)
 
-      
+          - if current_page.data.kind=="download"
+            .selected
+                  li
+                    a href="download.html"
+                      h1 =t(:download_header)
+          - else
+            .unselected
+                  li
+                    a href="download.html"
+                      h1 =t(:download_header)
+
+          - if current_page.data.kind=="adoption"
+            .selected
+                  li
+                    a href="adoption.html"
+                      h1 =t(:adoption_header)
+          - else
+            .unselected
+                  li
+                    a href="adoption.html"
+                      h1 =t(:adoption_header)
+
+          - if current_page.data.kind=="documentation"
+            .selected
+                  li
+                    a href="documentation.html"
+                      h1 =t(:documentation_header)
+          - else
+            .unselected
+                  li
+                    a href="documentation.html"
+                      h1 =t(:documentation_header)
+
+          - if current_page.data.kind=="support"
+            .selected
+                  li
+                    a href="support.html"
+                      h1 =t(:support_header)
+          - else
+            .unselected
+                  li
+                    a href="support.html"
+                      h1 =t(:support_header)
+
+          - if current_page.data.kind=="contribute"
+            .selected
+                  li
+                    a href="contribute.html"
+                      h1 =t(:contribute_header)
+          - else
+            .unselected
+                  li
+                    a href="contribute.html"
+                      h1 =t(:contribute_header)
+
+
+          .navmenu_set
+            ul.languagenav
+              li 
+                img src="/images/world10.png"
+                p Select Language
+                ul
+                  li
+                    a.drawer-brand href="/jp/index.html" 日本語
+                  li
+                    a.drawer-menu-item href="/en/index.html" English
+                  li
+                    a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
+
+      .subpcmenu_set
+        ul.languagenav
+          li 
+            img src="/images/world10.png"
+            p Select Language
+            ul
+              li
+                a.drawer-brand href="/jp/index.html" 日本語
+              li
+                a.drawer-menu-item href="/en/index.html" English
+              li
+                a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
+
+
+
       .github_ribbon
         span.forkongithub
           a href="https://github.com/effekseer/Effekseer"
             | Fork me on GitHub 
 
-
-
     .language
-        .language_menu
-          ul.nav
-            li 
-              img src="/images/world10.png"
-              p Select Language
-              ul
-                li
-                  a.drawer-brand href="/jp/index.html" 日本語
-                li
-                  a.drawer-menu-item href="/en/index.html" English
-                li
-                  a.drawer-menu-item href="/zh-tw/index.html" 繁体中文
         == yield

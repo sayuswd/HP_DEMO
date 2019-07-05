@@ -12,12 +12,10 @@ body {
 }
 
 /*language 言語選択設定*/
-.language_menu {
-  z-index: 9999;
-  text-align: center;
-}
+/*ヘッター言語選択 */
 
-.language_menu .nav {
+
+#header .languagenav {
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
@@ -28,14 +26,14 @@ body {
   }
 }
 
-.language_menu .nav li {
+#header .languagenav li {
   list-style: none;
   margin-top: 5px;
   margin-left: 5px;
 }
 
 
-.language_menu .nav li a {
+#header .languagenav li a {
   display: block;
   width: 100px;
   height: 40px;
@@ -51,7 +49,7 @@ body {
 }
 
 
-.language_menu .nav li ul {
+#header .languagenav li ul {
   width: 100px;
   display: none;
   margin-left: -40px;
@@ -59,12 +57,18 @@ body {
   z-index: 9999;
 }
 
-.nav > li li:hover > a {/*layer-2*/
+#header .languagenav > li li:hover > a {/*layer-2*/
   color: $header_text;
   background: $sashiiro2;
 }
 
-/**/
+/*メニューバー部分のロゴ設定*/
+#header .logo_menu img {
+  widows: 50px;
+  height: 50px;
+}
+
+/*ヘッター部分のロゴ設定*/
 #header .logo img {
   widows: 50px;
   height: 50px;
@@ -168,7 +172,9 @@ body {
     bottom:1px;
     top:auto;
   }
-@media screen and (min-width:500px) {
+
+/*リボンの画面サイズ可変設定*/
+@media screen and (min-width:750px) {
   .forkongithub {
     position:fixed;
     display:block;
@@ -197,11 +203,129 @@ body {
 }
 }
 
+
 //モバイルファースト (全環境に共通のデザイン)
 @media screen and (max-width: 899px) {
 /*TOP*/
 
+  /*ヘッター部分のロゴ設定*/
+#header .logo {
+  display: inline-block;
+  width: 100px;
+  vertical-align:top;
+  margin: 10px 20px 0px 20px;
+  z-index: 2;
+}
+
+/*レスポンシブメニューの言語選択削除*/
+#header .navmenu_set ul {
+  display: none;
+}
+
+
+  /*ヘッター 可変時の言語選択ボタン設定*/
+
+
+/*ヘッターメニューバー部分のロゴ設定*/
+#header .logo_menu {
+  display: none;
+
+}
+
+
+  /*共通メニュー用ヘッター言語選択 */
+  #header .navmenu_set{
+    width: 20%;
+    z-index: 9999;
+    text-align: center;
+  //  display: inline-block;
+}
+
+  /*PCメニュー用ヘッター言語選択 */
+  #header .subpcmenu_set{
+    width: 20%;
+    z-index: 9999;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*ヘッター のレスポンシブメニューのための設定*/
+  #header .nav-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: -5px;
+    left: 0;
+    z-index: 2;
+  }
+  #header .nav-toggle .menu-trigger {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 28px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  #header .nav-toggle .menu-trigger span {
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $sashiiro2;
+    transition: all .5s .2s;
+  }
+  #header .nav-toggle .menu-trigger.active span {
+    background-color: $main_color;
+  }
+  #header .nav-toggle .menu-trigger span:nth-of-type(1) {
+    top: 0;
+  }
+  #header .nav-toggle .menu-trigger.active span:nth-of-type(1) {
+    transform: translateY(12px) rotate(-45deg);
+  }
+  #header .nav-toggle .menu-trigger span:nth-of-type(2) {
+    top: 12px;
+  }
+  #header .nav-toggle .menu-trigger.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+  #header .nav-toggle .menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+  }
+  #header .nav-toggle .menu-trigger.active span:nth-of-type(3) {
+    transform: translateY(-12px) rotate(45deg);
+  }
+  #header .menunav_allset {
+    width: 100%;
+    background-color: $header_color;
+    color: $header_text;
+    text-align: center;
+    display: none;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  #header .menunav_allset ul {
+    list-style: none;
+    padding: 0px 0;
+  }
+  #header .menunav_allset ul li {
+    list-style: none;
+    padding: 0px 0;
+  }
+
 #header {
+  width: 100%;
   overflow: hidden;
   text-align: center;
   display: block;
@@ -209,23 +333,16 @@ body {
   font-size: $font_text_s;
   z-index: 1;
   
-  .logo {
-    display: inline-block;
-    vertical-align:top;
-    margin: 0px 20px 0px 10px;
-    z-index: 2;
-  }
-  
   .selected {
     display: inline-block;
     vertical-align:top;
     background-color: $header_select;
     padding: 0px 10px 1px 10px;
+    border-radius: 50%;
     z-index: 2;
   }
   
   .unselected {
-    display: inline-block;
     vertical-align:top;
     padding: 0px 10px 1px 10px;
     z-index: 2;
@@ -291,7 +408,7 @@ body {
 
 /* sec2の画像３枚の設定　 */
 #contents .section1_setting {
-  @include sections( 100%, 1000px, inline-block, center);
+  @include sections( 100%, auto, inline-block, center);
   background-color: $main_color;
   margin-top: 20px;
   vertical-align:top;
@@ -771,17 +888,71 @@ img {
   background-color:$header_color;
   font-size: $font_h2;
   z-index: 1;
+  padding-top: 20px;
 }
 
+/*ヘッター部分のロゴ設定*/
 #header .logo {
-  display: inline-block;
-  margin: 0px 20px 0px 10px;
+  display: none;
 }
+
+/*ヘッターメニューバー部分のロゴ設定*/
+#header .logo_menu {
+  display: inline-block;
+  vertical-align:top;
+  margin: 10px 15px 0px 15px;
+  z-index: 2;
+}
+
+
+/*language 言語選択設定*/
+/*共用メニュー用ヘッター言語選択 */
+#header .navmenu_set {
+  width: 160px;
+  z-index: 9999;
+  text-align: center;
+  display: inline-block;
+/*レスポンシブメニューの言語選択削除*/
+
+  display: none;
+}
+
+
+/*PCメニュー用ヘッター言語選択 */
+#header .subpcmenu_set{
+  width: 160px;
+  z-index: 9999;
+  text-align: center;
+  display: inline-block;
+}
+
+
+/*レスポンシブメニューの言語選択削除*/
+#header .subpcmenu_set ul {
+  display: none;
+}
+
 
 #header .selected {
   display: inline-block;
   background-color: #f8f9f9;
   padding: 0px 10px 1px 10px;
+  border-radius: 50%;
+}
+
+#header .selected ul {
+  width: 60px;
+  padding-left: 15px;
+  width: 50px;
+}
+
+#header .menunav_allset {
+  display: block;
+  list-style: none;
+
+  ul{
+    list-style: none;
+  }
 }
 
 #header .unselected {
@@ -789,8 +960,17 @@ img {
   padding: 0px 10px 1px 10px;
 }
 
+#header .unselected ul {
+  padding-left: 15px;
+  width: 50px;
+}
+
 #header .unselected:hover {
   background-color: $sashiiro1;
+}
+
+#header .unselected ul:hover {
+  padding-left: 15px;
 }
 
 #header h1 {
@@ -853,6 +1033,7 @@ img {
   display: -webkit-flex;
   -webkit-justify-content: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #contents .top_section {
