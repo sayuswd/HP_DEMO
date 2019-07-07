@@ -3,7 +3,7 @@
 
 
 /*@mixin*/
-@mixin sections_top_set ($width: 100%, $display: inline-block, $text-align: left) {
+@mixin sections_top_set ($width: 100%, $display: block, $text-align: left) {
   width: $width;
   display: $display;
   text-align: $text-align;
@@ -28,8 +28,9 @@ $main_color: #e9eeee;
 $header_color:#848a8a;
 $header_select:#f8f9f9;
 $header_text:#3c3f3f;
-$sashiiro1:#bcc5c5;
+$sashiiro1:#848a8a;;
 $sashiiro2:#68bdc5;
+$sashiiro3:#bbdada;
 $shadow:#3c3f3f;
 
 /*文字の大きさ*/
@@ -45,5 +46,11 @@ $font_text_l: 2em;
 $kankaku: 50px;
 $kankaku2: 20px;
 $M_left:20px;
+$moji: 20px;
 $sen: 5px;
+
+/*アドレスの文字カラー*/
+a:link {color:#ffffff;}
+a:visited{color:$sashiiro2;} 
+a:active{color:$sashiiro1;}
 

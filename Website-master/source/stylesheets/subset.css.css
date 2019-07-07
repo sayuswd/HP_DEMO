@@ -4,3 +4,15 @@
 /*バックカラー　文字色 幅 各種設定*/
 /*文字の大きさ*/
 /*間隔設定*/
+/*アドレスの文字カラー*/
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #68bdc5;
+}
+
+a:active {
+  color: #848a8a;
+}
