@@ -28,6 +28,10 @@ body {
   overflow-x: hidden;
 }
 
+.main {
+  text-align: center;
+}
+
 /*language 言語選択設定*/
 /*ヘッター言語選択 */
 #header {
@@ -105,11 +109,18 @@ body {
   width: 100%;
   height: 400px;
   margin: 0px 0px 0px 0px;
-  background: url("/source/images/effects1_1.png") no-repeat;
-  background-position: left top;
-  background-size: 100% auto;
+  background-color: #848a8a;
+  margin-right: auto;
+  margin-left: auto;
   display: block;
   position: relative;
+}
+
+#contents .eyecatch img {
+  width: 100%;
+  max-width: 1900px;
+  min-height: 400px;
+  height: auto;
 }
 
 /* Top画面のボタンの設定　 */
@@ -143,10 +154,20 @@ body {
 }
 
 /*サポートページのimg設定　*/
-#contents .support_grid img {
-  width: 50%;
+#contents .support_grid p img {
+  width: 100%;
   max-width: 50px;
-  min-width: 30px;
+  height: auto;
+  text-align: center;
+  margin-top: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+/*サポートページのimg設定　slack Discord*/
+#contents .support_grid .support_icon img {
+  width: 100%;
+  max-width: 150px;
   height: auto;
   text-align: center;
   margin-top: 0px;
@@ -224,7 +245,7 @@ body {
   top: 100px;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 999px) {
   /*TOP*/
   /*ヘッター */
   #header {
@@ -574,6 +595,7 @@ body {
   }
   /*紹介*/
   #contents .introduction_section1 {
+    width: 100%;
     margin: 50px;
   }
   #contents .introduction_img1_1 img {
@@ -648,7 +670,6 @@ body {
     text-align: center;
     display: block;
     background-color: #848a8a;
-    border-radius: 1%;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -685,6 +706,19 @@ body {
   /*採用実績*/
   /*採用実績設定*/
   #contents .adoption_allset {
+    width: 100%;
+    max-width: 650px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+    min-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #contents .adoption_allset1 {
     width: 100%;
     max-width: 600px;
     min-width: 400px;
@@ -822,7 +856,6 @@ body {
     height: auto;
     min-height: 300px;
     background-color: #848a8a;
-    border-radius: 1%;
     margin: 20px;
   }
   #contents .help_sections_set h2 {
@@ -890,7 +923,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #848a8a;
-    border-radius: 1%;
     margin: 20px;
   }
   #contents .locale_sections img {
@@ -935,6 +967,12 @@ body {
     margin: 30px;
   }
   /*サンプルエフェクト*/
+  #contents .contribute_title_bg {
+    width: 100%;
+    background-color: #bbdada;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   #contents .contribute_title_set {
     width: 100%;
     max-width: 600px;
@@ -943,20 +981,22 @@ body {
     margin: 20px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
-  #contents .contribute_title {
+  #contents .contribute_title_set .contribute_title {
     max-width: 600px;
     min-width: 400px;
     text-align: center;
-    padding-top: 50px;
+    padding-bottom: 10px;
   }
   #contents .sample_effect {
     width: 100%;
     max-width: 700px;
     min-width: 400px;
     height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-column-gap: 10px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -969,32 +1009,38 @@ body {
   }
   #contents .sample_effect2 {
     width: 100%;
+    max-width: 700px;
+    min-width: 400px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-column-gap: 10px;
     height: auto;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
   }
   #contents .sample_effect2 img {
     width: 150px;
     height: auto;
   }
   #contents .sample_effect p {
-    display: inline-block;
-    vertical-align: top;
+    width: 160px;
+    height: auto;
     background-color: #848a8a;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 5px;
+    padding-top: 3px;
   }
   #contents .sample_effect2 p {
-    display: inline-block;
-    vertical-align: top;
+    width: 160px;
+    height: auto;
     background-color: #68bdc5;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 5px;
+    padding-top: 3px;
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   /*TOP*/
   #header {
     overflow: hidden;
@@ -1294,7 +1340,6 @@ body {
     background-color: #68bdc5;
     background-size: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
     padding: 20px;
   }
   #contents .section5_setting {
@@ -1468,7 +1513,6 @@ body {
     text-align: center;
     display: block;
     background-color: #848a8a;
-    border-radius: 1%;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -1496,9 +1540,20 @@ body {
   }
   /*採用実績*/
   /*採用実績設定*/
+  #contents .adoption_allset1 {
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
   #contents .adoption_allset {
     width: 100%;
     max-width: 1200px;
+    min-width: 900px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -1506,14 +1561,6 @@ body {
   #contents .adoption_allset h2 {
     color: #3c3f3f;
   }
-  /* #contents .adoption_allset h3 {
-      color: $sashiiro2;
-      font-size: $font_h3;
-      text-align: left;
-      margin: $M_left;
-      padding-top: $M_left;
-    }
-    */
   #contents .adoption_allset p {
     color: #f8f9f9;
   }
@@ -1524,15 +1571,14 @@ body {
     margin: 50px;
   }
   #contents .adopted {
-    width: 100%;
     max-width: 500px;
+    min-width: 400px;
     height: 650px;
     color: #68bdc5;
     background-color: #3c3f3f;
     margin: 20px 20px;
     padding-bottom: 20px;
-    vertical-align: top;
-    display: inline-block;
+    display: block;
   }
   #contents .adopted h3 {
     color: #68bdc5;
@@ -1616,8 +1662,7 @@ body {
     margin: 5px;
   }
   #contents .adopted_other_setting {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     margin-left: 10px;
   }
   #contents .adopted_lists_other1 {
@@ -1631,15 +1676,20 @@ body {
     width: 100%;
     display: block;
     text-align: left;
-    margin-left: 50px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 20px;
+    padding-top: 50px;
   }
   #contents .documentation_top_set h3 {
-    margin-top: 20px;
+    margin-top: 50px;
+  }
+  #contents .documentation_top_set p {
+    margin: 20px;
   }
   #contents .help_sections_set {
-    vertical-align: top;
-    display: inline-block;
+    display: block;
     text-align: center;
     margin: 50px;
   }
@@ -1649,7 +1699,6 @@ body {
     height: auto;
     min-height: 300px;
     background-color: #848a8a;
-    border-radius: 1%;
   }
   #contents .help_sections_set h2 {
     color: #3c3f3f;
@@ -1659,6 +1708,8 @@ body {
   }
   #contents .help_sections_set p {
     color: #f8f9f9;
+    padding-top: 15px;
+    margin: 20px;
   }
   #contents .help_sections_set img {
     max-width: 100%;
@@ -1666,36 +1717,58 @@ body {
     height: auto;
     border-radius: 50%;
   }
+  #contents .documentation_tutorial_bg {
+    width: 100%;
+    height: auto;
+    background-color: #68bdc5;
+    padding-top: 50px;
+    padding-bottom: 400px;
+  }
   #contents .documentation_tutorial_set {
     width: 100%;
     display: block;
     text-align: left;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 50px;
-    vertical-align: top;
   }
   #contents .documentation_tutorial_set h3 {
     margin-top: 10px;
+    padding-top: 15px;
+  }
+  #contents .documentation_tutorial_set p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 30px;
   }
   #contents .section_setting_tutorial {
     width: 100%;
-    max-height: auto;
-    display: inline-block;
+    max-height: 2200px;
+    display: block;
     text-align: center;
-    vertical-align: top;
-    background-color: #68bdc5;
-    margin: 0px;
+    max-width: 1200px;
+    min-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
   }
   #contents .tutorial_sections {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+    margin-right: auto;
+    margin-left: auto;
   }
   #contents .locale_sections {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    min-width: 200px;
     height: 300px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #848a8a;
-    border-radius: 1%;
-    margin: 50px;
   }
   #contents .locale_sections img {
     width: 100%;
@@ -1706,52 +1779,87 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  #contents .locale_sections p {
+    margin: 20px;
+  }
   /*サポート*/
   #contents .support_grid {
     width: 100%;
+    max-width: 1200px;
     height: auto;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  #contents .support_bg {
+    background-color: #bbdada;
+    background-size: 100%;
+    padding: 30px;
+  }
+  #contents .supprot_github_section {
+    padding-bottom: 50px;
   }
   /*サンプルエフェクト*/
+  #contents .contribute_title_bg {
+    width: 100%;
+    background-color: #bbdada;
+    padding: 50px;
+  }
   #contents .contribute_title_set {
     width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
+  }
+  #contents .contribute_title_set p {
     margin: 20px;
   }
   #contents .sample_effect {
-    width: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
     height: auto;
     text-align: center;
   }
   #contents .sample_effect img {
-    width: 250px;
+    width: 260px;
     height: auto;
   }
   #contents .sample_effect2 {
-    width: 100%;
+    width: 1200px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: auto;
+    margin-left: auto;
     height: auto;
     text-align: center;
   }
   #contents .sample_effect2 img {
-    width: 250px;
-    height: auto;
+    width: 260px;
+    height: 250px;
+    margin: auto;
   }
   #contents .sample_effect p {
-    display: inline-block;
-    vertical-align: top;
+    width: 270px;
+    height: auto;
     background-color: #848a8a;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 20px;
+    padding-top: 3px;
   }
   #contents .sample_effect2 p {
-    display: inline-block;
-    vertical-align: top;
+    width: 270px;
+    height: auto;
     background-color: #68bdc5;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 20px;
+    padding-top: 3px;
   }
 }

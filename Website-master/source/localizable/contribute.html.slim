@@ -6,41 +6,42 @@ kind: contribute
 #contents
   .inner
     .main
-      .contribute_title_set
-        .comtribute_title
-          h2 =t(:contribute_header)
-
-          p =t('contribute.line1')
-
-          p =t('contribute.line2')
-
-        .comtribute_title
-          h3 =t('contribute.how')
-
-          p =t('contribute.how_line1')
-
-          p =t('contribute.how_line2')
-
-        .comtribute_title
-          .name_boxs
-            p =t('contribute.name')
-
-            p =t('contribute.effectname')
-
-            p =t('contribute.comment')
-
-        .comtribute_title
-          h3 =t('contribute.contributed')
-
-          p =t('contribute.contributed_desc')
+      .contribute_title_bg
+        .contribute_title_set
+          .contribute_title
+            h2 =t(:contribute_header)
   
-          - if I18n.locale.to_s == "jp"
-            a href='http://creativecommons.jp/sciencecommons/aboutcc0/' CC-0について
-
-          - if I18n.locale.to_s == "en"
-            a href='http://creativecommons.org/share-your-work/public-domain/cc0' About CC-0
-
-
+            p =t('contribute.line1')
+  
+            p =t('contribute.line2')
+  
+          .contribute_title
+            h3 =t('contribute.how')
+  
+            p =t('contribute.how_line1')
+  
+            p =t('contribute.how_line2')
+  
+          .contribute_title
+            .name_boxs
+              p =t('contribute.name')
+  
+              p =t('contribute.effectname')
+  
+              p =t('contribute.comment')
+  
+          .contribute_title
+            h3 =t('contribute.contributed')
+  
+            p =t('contribute.contributed_desc')
+    
+            - if I18n.locale.to_s == "jp"
+              a href='http://creativecommons.jp/sciencecommons/aboutcc0/' CC-0について
+  
+            - if I18n.locale.to_s == "en"
+              a href='http://creativecommons.org/share-your-work/public-domain/cc0' About CC-0
+  
+  
       .contribute_sample_effect
         .sample_effect
           p
