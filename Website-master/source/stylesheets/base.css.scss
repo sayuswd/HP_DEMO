@@ -988,6 +988,7 @@ p {
 }
 
 /*サポート*/
+
 #contents .supprot_section {
   width: 80%;
   max-width: 600px;
@@ -1018,6 +1019,29 @@ p {
     margin: 30px;
   }
 }
+
+#contents .support_bg {
+  width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+  background-color: $sashiiro3;
+  margin-right: auto;
+  margin-left: auto;
+  background-size: 100%;
+}
+
+#contents .mail_setting {
+  @include sections( 100%, 700px, block, center);
+  max-width: 600px;
+  min-width: 400px;
+  background-color: $main_color;
+  margin-top: $kankaku;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $kankaku2;
+  padding-bottom: $kankaku2;
+}
+
 
 /*サンプルエフェクト*/
 #contents .contribute_title_bg {
@@ -1851,7 +1875,6 @@ p {
 
 #contents .documentation_tutorial_bg {
   width: 100%;
-  height:auto;
   background-color: $sashiiro2;
   padding-top: $kankaku;
   padding-bottom: 400px;
@@ -1876,12 +1899,14 @@ p {
 
 
 #contents .section_setting_tutorial {
-  @include sections( 100%, auto, block, center);
+  width: 100%;
   max-width: 1200px;
   min-width: 1000px;
+  display: flex;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #contents .tutorial_sections {
@@ -2008,6 +2033,20 @@ p {
     background-color: $sashiiro2;
     margin: $moji;
     padding-top: 3px;
+    }
+
+    #contents .mail_setting {
+      @include sections( 100%, auto, flex, center);
+      max-width: 1200px;
+      background-color: $main_color;
+      display: -webkit-flex;
+      flex-direction: row;
+      -webkit-justify-content: center;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: $kankaku;
+      margin-bottom: $kankaku; 
     }
 
 
