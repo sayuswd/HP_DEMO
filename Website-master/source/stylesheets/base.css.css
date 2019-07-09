@@ -7,7 +7,7 @@
 /*間隔設定*/
 /*アドレスの文字カラー*/
 a:link {
-  color: #ffffff;
+  color: #3c3f3f;
 }
 
 a:visited {
@@ -16,6 +16,14 @@ a:visited {
 
 a:active {
   color: #848a8a;
+}
+
+#contents .adoption_allset a:link {
+  color: #ffffff;
+}
+
+#contents .adoption_allset1 a:link {
+  color: #ffffff;
 }
 
 /* header contens main 共通css設定 */
@@ -102,6 +110,16 @@ body {
 /* main設定　 */
 #contents {
   width: 100%;
+}
+
+#contents ul, ol {
+  color: #848a8a;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
 }
 
 /* Title設定　 */
@@ -425,7 +443,7 @@ body {
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
     width: 100%;
-    max-height: 1500px;
+    max-height: auto;
     display: flex;
     text-align: center;
     background-color: #e9eeee;
@@ -437,6 +455,7 @@ body {
     flex-wrap: wrap;
     -webkit-justify-content: center;
     justify-content: center;
+    align-items: center;
   }
   #contents .top_section {
     width: 80%;
@@ -472,6 +491,7 @@ body {
     text-align: center;
     max-width: 600px;
     min-width: 400px;
+    height: auto;
     vertical-align: top;
     background-color: #68bdc5;
     margin-right: auto;
@@ -708,13 +728,10 @@ body {
   #contents .adoption_allset {
     width: 100%;
     max-width: 650px;
+    min-width: 400px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 600px;
-    min-width: 400px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     margin-right: auto;
     margin-left: auto;
   }
@@ -744,7 +761,7 @@ body {
   #contents .adopted {
     width: 100%;
     min-width: 350px;
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -755,7 +772,7 @@ body {
   #contents .adopted1 {
     width: 100%;
     min-width: 350px;
-    max-width: 550px;
+    max-width: 500px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -909,11 +926,15 @@ body {
     background-color: #68bdc5;
   }
   #contents .tutorial_sections {
+    width: 100%;
+    max-width: 650px;
+    min-width: 400px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
   }
   #contents .locale_sections {
     max-width: 250px;
@@ -923,7 +944,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: #848a8a;
-    margin: 20px;
+    margin-bottom: 20px;
   }
   #contents .locale_sections img {
     width: 80%;
@@ -1167,7 +1188,7 @@ body {
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
     width: 100%;
-    max-height: 1500px;
+    max-height: auto;
     display: flex;
     text-align: center;
     max-width: 1200px;
@@ -1744,7 +1765,7 @@ body {
   }
   #contents .section_setting_tutorial {
     width: 100%;
-    max-height: 2200px;
+    max-height: auto;
     display: block;
     text-align: center;
     max-width: 1200px;
@@ -1819,33 +1840,37 @@ body {
     margin: 20px;
   }
   #contents .sample_effect {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: auto;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
-    height: auto;
     text-align: center;
   }
   #contents .sample_effect img {
-    width: 260px;
+    width: 250px;
     height: auto;
   }
   #contents .sample_effect2 {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1000px;
+    height: auto;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-right: auto;
     margin-left: auto;
-    height: auto;
+    margin-bottom: 50px;
     text-align: center;
   }
   #contents .sample_effect2 img {
-    width: 260px;
-    height: 250px;
+    width: 250px;
     margin: auto;
   }
   #contents .sample_effect p {

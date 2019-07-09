@@ -90,6 +90,16 @@ body {
   width: 100%;
 }
 
+#contents ul, ol {
+  color: $sashiiro1;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
+ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
 /* Title設定　 */
 #contents .eyecatch {
   width: 100%;
@@ -439,7 +449,7 @@ body {
 
 /* sec2の画像３枚の設定　 */
 #contents .section1_setting {
-  @include sections( 100%, 1500px, flex, center);
+  @include sections( 100%, auto, flex, center);
   background-color: $main_color;
   max-width: 600px;
   min-width: 400px;
@@ -449,6 +459,7 @@ body {
   flex-wrap: wrap;
   -webkit-justify-content: center;
   justify-content: center;
+  align-items: center;
 }
 
 #contents .top_section {
@@ -484,6 +495,7 @@ body {
   @include sections( 100%, 700px, block, center);
   max-width: 600px;
   min-width: 400px;
+  height: auto;
   vertical-align:top;
   background-color: $sashiiro2;
   margin-right: auto;
@@ -718,13 +730,10 @@ body {
   #contents .adoption_allset {
   width: 100%;
   max-width: 650px;
+  min-width: 400px;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 600px;
-  min-width: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-right: auto;
   margin-left: auto;
   }
@@ -760,7 +769,7 @@ body {
 #contents .adopted {
   width: 100%;
   min-width: 350px;
-  max-width: 550px;
+  max-width: 500px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -772,7 +781,7 @@ body {
 #contents .adopted1 {
   width: 100%;
   min-width: 350px;
-  max-width: 550px;
+  max-width: 500px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -943,11 +952,16 @@ p {
 }
 
 #contents .tutorial_sections {
+  width: 100%;
+  max-width: 650px;
+  min-width: 400px;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  //grid-template-columns: 300px 300px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: $kankaku2;
 }
 
 #contents .locale_sections {
@@ -958,8 +972,7 @@ p {
   margin-right: auto;
   margin-left: auto;
   background-color: $header_color;
-//  border-radius: 1%;
-  margin: $kankaku2;
+  margin-bottom: $kankaku2;
 img {
   width: 80%;
   max-width: 150px;
@@ -1244,7 +1257,7 @@ p {
 
 /* sec2の画像３枚の設定　 */
 #contents .section1_setting {
-  @include sections( 100%, 1500px, flex, center);
+  @include sections( 100%, auto, flex, center);
   max-width: 1200px;
   display: -webkit-flex;
   -webkit-justify-content: center;
@@ -1838,7 +1851,7 @@ p {
 
 #contents .documentation_tutorial_bg {
   width: 100%;
-  height: auto;
+  height:auto;
   background-color: $sashiiro2;
   padding-top: $kankaku;
   padding-bottom: 400px;
@@ -1863,7 +1876,7 @@ p {
 
 
 #contents .section_setting_tutorial {
-  @include sections( 100%, 2200px, block, center);
+  @include sections( 100%, auto, block, center);
   max-width: 1200px;
   min-width: 1000px;
   margin-right: auto;
@@ -1944,35 +1957,39 @@ p {
   }
 
 #contents .sample_effect {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1000px;
+  height: auto;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-right: auto;
   margin-left: auto;
   margin-bottom: $kankaku;
-  height: auto;
   text-align: center;
 
   img {
-  width: 260px;
+  width: 250px;
   height: auto;
   }
 }
 
 #contents .sample_effect2 {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1000px;
+  height: auto;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-right: auto;
   margin-left: auto;
-  height: auto;
+  margin-bottom: $kankaku;
   text-align: center;
 
   img {
-  width: 260px;
-  height: 250px;
+  width: 250px;
   margin: auto;
   }
 }

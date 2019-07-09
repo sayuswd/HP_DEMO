@@ -50,7 +50,9 @@ $moji: 20px;
 $sen: 5px;
 
 /*アドレスの文字カラー*/
-a:link {color:#ffffff;}
+a:link {color:$shadow;}
 a:visited{color:$sashiiro2;} 
 a:active{color:$sashiiro1;}
 
+#contents .adoption_allset a:link {color: #ffffff;}
+#contents .adoption_allset1 a:link {color: #ffffff;}
