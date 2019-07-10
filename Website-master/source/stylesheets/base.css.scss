@@ -67,6 +67,10 @@ body {
   z-index: 9999;
 }
 
+#header ul li, ol li {
+  padding: 0px;
+} 
+
 #header .languagenav > li li:hover > a {/*layer-2*/
   color: $header_text;
   background: $sashiiro2;
@@ -211,7 +215,7 @@ ul li, ol li {
   }
 
 /*リボンの画面サイズ可変設定*/
-@media screen and (min-width:900px) {
+@media screen and (min-width:1000px) {
   .forkongithub {
     position:fixed;
     display:block;
@@ -292,7 +296,8 @@ ul li, ol li {
   /*ヘッター部分のロゴ設定*/
 #header .logo {
   display: inline-block;
-  width: 100px;
+  width: 50%;
+  text-align: center;
   vertical-align:top;
   margin: 10px 20px 0px 20px;
   z-index: 2;
@@ -323,12 +328,17 @@ ul li, ol li {
 }
 
   /*PCメニュー用ヘッター言語選択 */
-  #header .subpcmenu_set{
-    z-index: 9999;
-    text-align: center;
-    display: inline-block;
+#header .subpcmenu_set {
+position: absolute;
+flex-wrap: wrap;
+justify-content: flex-end;
+align-items: center;
+height: 60px;
+padding: 0 40px;
+top: 20px;
+right: 0;
+z-index: 2;
 }
-
 
 
 /*ヘッター のレスポンシブメニューのための設定*/
@@ -618,9 +628,17 @@ ul li, ol li {
   margin-right: auto;
   margin-left: auto;
   margin-top: $kankaku;
-  margin-bottom: 100px;
   padding-top: $kankaku2;
   padding-bottom: $kankaku;
+  ul , li {
+  width: 80%;
+  min-width: 400px;
+  color: $header_text;
+  list-style: none;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  }
 }
 
 /*紹介*/
@@ -836,14 +854,16 @@ h3 {
 
 #contents .list1_site {
     display: flex;
+    margin-top: 10px;
     p {
       margin:20px;
     }
   }
 #contents .list1_steam {
     display: flex;
+    margin-top: 10px;
     p {
-      margin:15px;
+      margin:20px;
     }
   }
   
@@ -851,7 +871,7 @@ h3 {
     display: flex;
     margin-top: 10px;
     p {
-      margin:5px;
+      margin:20px;
     }
   }
   
@@ -918,7 +938,6 @@ h3 {
     max-width: 100%;
     max-width: 100px;
     height: auto;
-    border-radius: 50%;
 }
 
 #contents .documentation_tutorial_set {
@@ -1164,9 +1183,6 @@ p {
   z-index: 9999;
   text-align: center;
   display: inline-block;
-/*レスポンシブメニューの言語選択削除*/
-
-  display: none;
 }
 
 
@@ -1193,8 +1209,7 @@ p {
 }
 
 #header .selected ul {
-  width: 60px;
-  padding-left: 15px;
+  padding-left: 5px;
   width: 50px;
 }
 
@@ -1542,8 +1557,10 @@ p {
   margin-right: auto;
   margin-bottom: 100px;
   text-align: center;
-  p{
-    padding: $sen;
+  ul , li {
+    color: $header_text;
+    list-style: none;
+    text-align: center;
   }
 }
 
@@ -1846,7 +1863,7 @@ p {
 #contents .help_sections {
     max-width: 500px;
     min-width: 300px;
-    height: auto;
+    height: 380px;
     min-height: 300px;
     background-color: $header_color;
 //    border-radius: 1%;
@@ -1868,9 +1885,8 @@ p {
 
 #contents .help_sections_set img {
     max-width: 100%;
-    max-width: 100px;
+    max-width: 180px;
     height: auto;
-    border-radius: 50%;
 }
 
 #contents .documentation_tutorial_bg {
@@ -1929,15 +1945,15 @@ p {
   background-color: $header_color;
 img {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   min-width: 150px;
   text-align: center;
   height: auto;
-  margin-top:20px; 
-  margin-bottom: 20px;
+  margin-top:5px; 
+  margin-bottom: 5px;
 }
 p {
-  margin: $moji;
+  margin: 10px;
 }
 }
 /*サポート*/
@@ -1971,7 +1987,7 @@ p {
 }
 
 #contents .contribute_title_set {
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;

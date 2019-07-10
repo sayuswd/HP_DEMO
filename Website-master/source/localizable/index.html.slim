@@ -50,9 +50,10 @@ kind: top
         .section3_setting
           .download_section1
             h2 Download
-            img src="/images/tool.jpg"
+
 
           .download_section2
+            img src="/images/tool.jpg"
             .download_inline
               h3 =t('top.for_designer') 
               a href="download.html#tool" =t('top.effect_editor') 
@@ -116,13 +117,14 @@ kind: top
     .news_section_bg
       .news_section
         h2 News
-  
-        p =t('top.news_0')
-  
-        p =t('top.news_1') 
-  
-        p =t('top.news_2')
-  
-        p =t('top.news_3')
-  
-        a href="releasenote.html" =t(:releasenote_header)
+        ul
+          li
+            p =t('top.news_0')
+          li
+            p =t('top.news_1') 
+          li
+            p =t('top.news_2')
+          li
+            p =t('top.news_3')
+          li
+            a href="releasenote.html" =t(:releasenote_header)
