@@ -210,7 +210,7 @@ ul li, ol li {
   font-family: arial,sans-serif;
   text-align: center;
   font-weight: bold;
-  padding: 5px 40px;
+  padding: 5px 15px;
   font-size: 1rem;
   line-height: 2rem;
   position: relative;
@@ -252,6 +252,7 @@ ul li, ol li {
   #header .github_ribbon .forkongithub a {
     width: 200px;
     position: absolute;
+    padding: 5px 40px;
     top: 60px;
     right: -60px;
     transform: rotate(45deg);
@@ -265,6 +266,34 @@ ul li, ol li {
 
 #header .github_ribbon .forkongithubspan {
   top: 100px;
+}
+
+/*サンプルエフェクトボタン変化*/
+#contents .sample_effect p:hover {
+  box-shadow: 0 0 20px 5px rgba(5, 42, 59, 0.829) inset;
+}
+
+#contents .sample_effect2 p:hover {
+  box-shadow: 0 0 20px 5px rgba(5, 42, 59, 0.829) inset;
+}
+
+/*サンプルエフェクトボタン詳細*/
+#contents .contribute_effect_title {
+  max-width: 1200px;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contents .contribute_effect_title h3 {
+  color: #848a8a;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 999px) {
@@ -338,7 +367,7 @@ ul li, ol li {
     justify-content: flex-end;
     align-items: center;
     height: 60px;
-    padding: 0 40px;
+    padding: 0 30px;
     top: 20px;
     right: 0;
     z-index: 2;
@@ -422,7 +451,7 @@ ul li, ol li {
   /* Title設定　 */
   #contents .eyecatch p {
     width: 100%;
-    min-width: 450px;
+    min-width: 350px;
     position: absolute;
     top: 30px;
     left: 10%;
@@ -441,15 +470,17 @@ ul li, ol li {
     background-color: #2A2A2A;
     text-decoration: none;
     border: 0;
-    border-radius: 5px;
     padding: 10px 20px 10px 20px;
     display: inline-block;
     vertical-align: top;
     padding: 0.5em 1em;
     background: #bcc5c5;
-    border-left: solid 15px #69bec6;
+    border: solid 2px #69bec6;
     color: #2A2A2A;
     font-weight: bold;
+  }
+  #contents .eyecatch a:hover {
+    background: rgba(245, 244, 244, 0.37);
   }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -459,7 +490,7 @@ ul li, ol li {
     text-align: center;
     background-color: #e9eeee;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
@@ -468,10 +499,13 @@ ul li, ol li {
     justify-content: center;
     align-items: center;
   }
+  #contents .introduction_img1_1 h3 {
+    margin: 10px;
+  }
   #contents .top_section {
     width: 80%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: auto;
     background-color: #848a8a;
     text-align: center;
@@ -501,7 +535,7 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: auto;
     vertical-align: top;
     background-color: #68bdc5;
@@ -539,7 +573,7 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: #bbdada;
     margin-top: 50px;
     margin-right: auto;
@@ -561,6 +595,7 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
+    min-width: 300px;
     background-color: #848a8a;
     margin-top: 50px;
     margin-right: auto;
@@ -577,6 +612,16 @@ ul li, ol li {
     margin-right: auto;
     margin-left: auto;
   }
+  #contents .contribute_section p {
+    margin: 10px;
+  }
+  /*投稿エフェクト中ページ*/
+  #contents .contribute_title .contribute_inner {
+    text-align: left;
+  }
+  #contents .contribute_inner_text {
+    padding-bottom: 100px;
+  }
   /* book_sectionsの設定　 */
   #contents .section5_setting {
     width: 100%;
@@ -584,7 +629,7 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: #68bdc5;
     margin-top: 50px;
     margin-right: auto;
@@ -613,7 +658,7 @@ ul li, ol li {
   #contents .news_section {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: #bbdada;
     height: auto;
     text-align: center;
@@ -625,7 +670,7 @@ ul li, ol li {
   }
   #contents .news_section ul, #contents .news_section li {
     width: 80%;
-    min-width: 400px;
+    min-width: 300px;
     color: #3c3f3f;
     list-style: none;
     text-align: left;
@@ -669,6 +714,9 @@ ul li, ol li {
     width: auto;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  #contents .introduction_section3 p {
+    margin: 10px;
   }
   #contents .introduction_section3 .introduction_img3_1 img {
     width: 100%;
@@ -729,6 +777,12 @@ ul li, ol li {
   #contents .introduction_section4 .introduction_sec4_title1 {
     padding-top: 15px;
   }
+  #contents .introduction_section4 .introduction_sec4_title1 p {
+    margin: 10px;
+  }
+  #contents .introduction_section4 .introduction_sec4_title1 p {
+    margin: 10px;
+  }
   /*ダウンロードの過去のバージョン*/
   #contents .download_prev {
     width: 100%;
@@ -747,7 +801,7 @@ ul li, ol li {
   #contents .adoption_allset {
     width: 100%;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -757,7 +811,7 @@ ul li, ol li {
   #contents .adoption_allset1 {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -773,14 +827,14 @@ ul li, ol li {
   #contents .adoption_title {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
   }
   #contents .adopted {
     width: 100%;
-    min-width: 350px;
     max-width: 500px;
+    min-width: 300px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -790,8 +844,8 @@ ul li, ol li {
   }
   #contents .adopted1 {
     width: 100%;
-    min-width: 350px;
     max-width: 500px;
+    min-width: 300px;
     height: auto;
     text-align: center;
     color: #68bdc5;
@@ -873,13 +927,23 @@ ul li, ol li {
     display: block;
     text-align: left;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
   }
   #contents .documentation_top_set h3 {
     margin-top: 20px;
+    margin-left: 20px;
+  }
+  #contents .documentation_top_set h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #contents .documentation_top_set p {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   #contents .help_sections_set {
     display: block;
@@ -918,7 +982,7 @@ ul li, ol li {
     text-align: left;
     background-color: #68bdc5;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
@@ -931,7 +995,9 @@ ul li, ol li {
   #contents .documentation_tutorial_set p {
     padding-top: 15px;
     padding-bottom: 15px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
   }
   #contents .section_setting_tutorial {
     width: 100%;
@@ -939,7 +1005,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     flex-wrap: wrap;
@@ -982,9 +1048,12 @@ ul li, ol li {
   #contents .supprot_section {
     width: 80%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     display: inline-block;
     vertical-align: top;
+  }
+  #contents .supprot_section p {
+    margin: 20px;
   }
   #contents .supprot_github_section {
     text-align: center;
@@ -995,7 +1064,7 @@ ul li, ol li {
   #contents .support_grid {
     width: 80%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: auto;
     text-align: center;
     display: block;
@@ -1010,7 +1079,7 @@ ul li, ol li {
   #contents .support_bg {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: #bbdada;
     margin-right: auto;
     margin-left: auto;
@@ -1040,7 +1109,7 @@ ul li, ol li {
   #contents .contribute_title_set {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     text-align: center;
     margin: 20px;
     margin-right: auto;
@@ -1048,14 +1117,17 @@ ul li, ol li {
   }
   #contents .contribute_title_set .contribute_title {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     text-align: center;
     padding-bottom: 10px;
+  }
+  #contents .contribute_title_set .contribute_title p {
+    margin: 20px;
   }
   #contents .sample_effect {
     width: 100%;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 300px;
     height: auto;
     display: grid;
     grid-template-rows: auto;
@@ -1064,8 +1136,8 @@ ul li, ol li {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   #contents .sample_effect img {
     width: 150px;
@@ -1074,7 +1146,7 @@ ul li, ol li {
   #contents .sample_effect2 {
     width: 100%;
     max-width: 700px;
-    min-width: 400px;
+    min-width: 300px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1221,9 +1293,12 @@ ul li, ol li {
     vertical-align: top;
     padding: 0.5em 1em;
     background: #bcc5c5;
-    border-left: solid 15px #69bec6;
+    border: solid 2px #69bec6;
     color: #2A2A2A;
     font-weight: bold;
+  }
+  #contents .eyecatch a:hover {
+    background: rgba(245, 244, 244, 0.37);
   }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -1879,6 +1954,10 @@ ul li, ol li {
   #contents .contribute_title_set p {
     margin: 20px;
   }
+  /*投稿エフェクト中ページ*/
+  #contents .contribute_inner_text {
+    padding-bottom: 100px;
+  }
   #contents .sample_effect {
     width: 100%;
     max-width: 1200px;
@@ -1889,7 +1968,7 @@ ul li, ol li {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
   }
   #contents .sample_effect img {
@@ -1906,7 +1985,7 @@ ul li, ol li {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-align: center;
   }
   #contents .sample_effect2 img {
