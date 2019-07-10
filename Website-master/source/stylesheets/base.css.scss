@@ -107,23 +107,28 @@ ul li, ol li {
 /* Title設定　 */
 #contents .eyecatch {
   width: 100%;
-  height: 400px;
+  height: 395px;
   margin: 0px 0px 0px 0px;
-  background-color: $sashiiro1;
+  background-color: #191a1a;
   margin-right:auto;
   margin-left: auto;
   display: block;
   position: relative;
 }
 
-#contents .eyecatch img {
-  width: 100%;
-  max-width: 1900px;
-  min-height: 400px;
-  height: auto;
-}
 
 /* Top画面のボタンの設定　 */
+
+/*トップ画像*/
+#contents .eyecatch .imgsize_setting1 img {
+  width: 1900px;
+  height: 400px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 #contents .eyecatch a:hover {
@@ -184,7 +189,7 @@ ul li, ol li {
   display: block;
   .forkongithub a {
     background: #3c3f3f;
-    color: #848a8a;
+    color: #b1ffff;
     text-decoration: none;
     font-family:arial,sans-serif;
     text-align:center;
@@ -196,8 +201,8 @@ ul li, ol li {
     transition:0.5s;
   }
   .forkongithub a:hover {
-    background:#b1ffff;
-    color:#3c3f3f;
+    background:$header_select;
+    color:#848a8a;
   }
   .forkongithub a::before,a::after {
     content:"";
@@ -207,7 +212,7 @@ ul li, ol li {
     top:1px;
     left:0;
     height:1px;
-    background:#b1ffff;
+    background:#f9f9f8;
   }
   .forkongithub a::after {
     bottom:1px;
@@ -307,7 +312,7 @@ p:hover {
   }
   
   .unselected:hover {
-    background-color: $sashiiro1;
+    background-color: #f9f9f8;
     border-radius: 1%;
   }
   
@@ -342,7 +347,16 @@ p:hover {
 
 
   /*ヘッター 可変時の言語選択ボタン設定*/
-
+  #header .languagenav li a {
+    width: 70px;
+    height: 40px;
+  
+  }
+  #header .languagenav li ul {
+    width: 70px;
+    display: none;
+  }
+  
 
   /*ヘッターメニューバー部分のロゴ設定*/
 #header .logo_menu {
@@ -356,7 +370,6 @@ p:hover {
     width: 20%;
     z-index: 9999;
     text-align: center;
-  //  display: inline-block;
 }
 
   /*PCメニュー用ヘッター言語選択 */
@@ -375,6 +388,7 @@ z-index: 2;
 
 /*ヘッター のレスポンシブメニューのための設定*/
   #header .nav-toggle {
+    background-color: $header_color;
     position: absolute;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -406,7 +420,7 @@ z-index: 2;
     transition: all .5s .2s;
   }
   #header .nav-toggle .menu-trigger.active span {
-    background-color: $main_color;
+    background-color: $header_text;
   }
   #header .nav-toggle .menu-trigger span:nth-of-type(1) {
     top: 0;
@@ -458,38 +472,38 @@ z-index: 2;
 /* Title設定　 */
 #contents .eyecatch p {
   width: 100%;
-  min-width: 350px;
+  min-width: 400px;
   position: absolute;
-  top: 30px;
-  left: 10%;
+  top: 100px;
+  left: 20%;
   margin: 50px 0px 50px 0px;
   font-size: $font_text_l;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-  text-shadow: (-1px) -1px $shadow, 1px -1px $shadow, -1px 1px $shadow, 1px 1px $shadow;
+  text-shadow: (-1px) -1px $shadow, 2px -1px $shadow, -1px 2px $shadow, 1px 2px $shadow;
 }
 
 /* Top画面のボタンの設定　 */
 #contents .eyecatch a {
   position: absolute;
-  top: 220px;
-  left: 120px;
+  top: 260px;
+  left: 80px;
   font-size: $font_text_m;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-  background-color: #2A2A2A;
   text-decoration: none;
   border: 0;
   padding: 10px 20px 10px 20px;
   display: inline-block;
   vertical-align:top;
-  padding: 0.5em 1em;
-  background: #bcc5c5;
-  border: solid 2px #69bec6;
+  padding: 1em 1.5em;
+  background: rgba(244, 244, 245, 0.233);
+  border: solid 2px $shadow;
   color: #2A2A2A;
   font-weight: bold;
 }
 
 #contents .eyecatch a:hover {
-  background: rgba(245, 244, 244, 0.37);
+  background: $main_color;
+  color: $shadow;
 }
 
 /* sec2の画像３枚の設定　 */
@@ -516,7 +530,7 @@ z-index: 2;
   max-width: 600px;
   min-width: 300px;
   height: auto;
-  background-color: $sashiiro1;
+  background-color: $shadow;
   text-align: center;
   margin-top: $kankaku;
   margin-right: auto;
@@ -537,6 +551,7 @@ z-index: 2;
   margin-right:auto;
   margin-left: auto;
   margin-top: 4%;
+  color: #9da3a3;
 }
 
 /* MVの設定　 */
@@ -561,7 +576,7 @@ z-index: 2;
 
 #contents .movie_section1 {
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   height: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -569,7 +584,7 @@ z-index: 2;
 
 #contents .movie_section2 {
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   height: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -594,7 +609,7 @@ z-index: 2;
 
 #contents .download_section_links {
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
   text-align: left;
   padding-left: 30%;
   padding-right: 30%;
@@ -742,7 +757,7 @@ z-index: 2;
   #contents .download_contents_topset{
   width: 100%;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   margin-right: auto;
   margin-left: auto;
   }
@@ -750,7 +765,7 @@ z-index: 2;
 #contents .download_contents_set {
     @include sections(100%,2500px,flex,center);
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: $main_color;
@@ -764,7 +779,7 @@ z-index: 2;
     height: auto;
     text-align: center;
     display:block;
-    background-color: $header_color;
+    background-color: $sashiiro1;
   //  border-radius: 1%;
     margin-top: $kankaku2;
     margin-right: auto;
@@ -798,7 +813,7 @@ z-index: 2;
   #contents .download_prev {
     @include sections(100%,2500px,flex,center);
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: $sashiiro3;
@@ -986,7 +1001,7 @@ p {
     min-width: 100px;
     height: auto;
     min-height: 300px;
-    background-color: $header_color;
+    background-color: $sashiiro1;
   //  border-radius: 1%;
     margin: $kankaku2;
   }
@@ -1047,7 +1062,7 @@ p {
 #contents .tutorial_sections {
   width: 100%;
   max-width: 650px;
-  min-width: 400px;
+  min-width: 300px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1064,7 +1079,7 @@ p {
   min-height: 300px;
   margin-right: auto;
   margin-left: auto;
-  background-color: $header_color;
+  background-color: $sashiiro1;
   margin-bottom: $kankaku2;
 img {
   width: 80%;
@@ -1130,7 +1145,7 @@ p {
 #contents .mail_setting {
   @include sections( 100%, 700px, block, center);
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   background-color: $main_color;
   margin-top: $kankaku;
   margin-right: auto;
@@ -1170,7 +1185,7 @@ p {
 #contents .sample_effect {
   width: 100%;
   max-width: 700px;
-  min-width: 300px;
+  min-width: 160px;
   height: auto;
   display: grid;
   grid-template-rows: auto;
@@ -1191,7 +1206,7 @@ p {
 #contents .sample_effect2 {
   width: 100%;
   max-width: 700px;
-  min-width: 300px;
+  min-width: 160px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1256,7 +1271,6 @@ p {
   z-index: 2;
 }
 
-
 /*language 言語選択設定*/
 /*共用メニュー用ヘッター言語選択 */
 #header .navmenu_set {
@@ -1266,7 +1280,6 @@ p {
   display: inline-block;
 }
 
-
 /*PCメニュー用ヘッター言語選択 */
 #header .subpcmenu_set{
   width: 160px;
@@ -1275,12 +1288,10 @@ p {
   display: inline-block;
 }
 
-
 /*レスポンシブメニューの言語選択削除*/
 #header .subpcmenu_set ul {
   display: none;
 }
-
 
 #header .selected {
   display: inline-block;
@@ -1341,42 +1352,42 @@ p {
   overflow: hidden;
 }
 
+
 /* Title設定　 */
 #contents .eyecatch p {
   width: 100%;
-  min-width: 450px;
+  min-width: 400px;
   position: absolute;
-  top: 40px;
-  left: 20%;
+  top: 30px;
+  left: 50%;
   margin: 50px 0px 50px 0px;
   font-size: 3em;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-  text-shadow: (-1px) -1px $shadow, 1px -1px $shadow, -1px 1px $shadow, 1px 1px $shadow;
+  text-shadow: (-1px) -2px $shadow, 2px -2px $shadow, -2px 2px $shadow, 2px 2px $shadow;
 }
 
 /* Top画面のボタンの設定　 */
 #contents .eyecatch a {
   position: absolute;
-  top: 220px;
-  left: 70%;
+  top: 240px;
+  left: 15%;
   font-size: $font_text_l;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-  background-color: #2A2A2A;
   text-decoration: none;
   border: 0;
-  border-radius: 1%;
   padding: 10px 20px 10px 20px;
   display: inline-block;
   vertical-align:top;
-  padding: 0.5em 1em;
-  background: #bcc5c5;
-  border: solid 2px #69bec6;
+  padding: 0.3em 0.8em;
+  background: rgba(244, 244, 245, 0.233);
+  border: solid 2px $shadow;
   color: #2A2A2A;
   font-weight: bold;
 }
 
 #contents .eyecatch a:hover {
-  background: rgba(245, 244, 244, 0.37);
+  background: $main_color;
+  color: $shadow;
 }
 
 /* sec2の画像３枚の設定　 */
@@ -1395,7 +1406,7 @@ p {
   width: 80%;
   max-width: 400px;
   height: 500px;
-  background-color: $sashiiro1;
+  background-color: $shadow;
   text-align: center;
   margin-right:auto;
   margin-left: auto;
@@ -1416,6 +1427,7 @@ p {
   margin-right:auto;
   margin-left: auto;
   margin-top: 4%;
+  color: #9da3a3;
 }
 
 
@@ -1444,7 +1456,7 @@ p {
 
 #contents .movie_section1 {
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   height: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -1453,7 +1465,7 @@ p {
 
 #contents .movie_section2 {
   max-width: 600px;
-  min-width: 400px;
+  min-width: 300px;
   height: 300px;
   margin-right: auto;
   margin-left: auto;
@@ -1522,7 +1534,7 @@ p {
 
 #contents .download_section_links {
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
   text-align: left;
   margin: 30px;
 }
@@ -1727,7 +1739,7 @@ margin-bottom: 50px;
 #contents .download_contents_set {
     @include sections(100%,2200px,flex,center);
     max-width: 1200px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: #e9eeee;
@@ -1740,8 +1752,7 @@ margin-bottom: 50px;
     height: auto;
     text-align: center;
     display: block;
-    background-color: $header_color;
-//    border-radius: 1%;
+    background-color: $sashiiro1;
     margin-top: $kankaku2;
     margin-right: auto;
     margin-left: auto;
@@ -1759,7 +1770,7 @@ margin-bottom: 50px;
   #contents .download_prev {
     @include sections(100%,2200px,flex,center);
     max-width: 1200px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: $sashiiro3;
@@ -1808,7 +1819,7 @@ margin-bottom: 50px;
 
 #contents .adopted {
   max-width: 500px;
-  min-width: 400px;
+  min-width: 300px;
   height: 650px;
   color: $sashiiro2;
   background-color: $shadow;
@@ -1950,7 +1961,7 @@ p {
     min-width: 300px;
     height: 380px;
     min-height: 300px;
-    background-color: $header_color;
+    background-color: $sashiiro1;
 //    border-radius: 1%;
   }
 
@@ -2027,7 +2038,7 @@ p {
   height: 300px;
   margin-right: auto;
   margin-left: auto;
-  background-color: $header_color;
+  background-color: $sashiiro1;
 img {
   width: 100%;
   max-width: 200px;

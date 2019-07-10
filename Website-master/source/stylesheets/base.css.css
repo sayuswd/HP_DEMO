@@ -129,23 +129,27 @@ ul li, ol li {
 /* Title設定　 */
 #contents .eyecatch {
   width: 100%;
-  height: 400px;
+  height: 395px;
   margin: 0px 0px 0px 0px;
-  background-color: #848a8a;
+  background-color: #191a1a;
   margin-right: auto;
   margin-left: auto;
   display: block;
   position: relative;
 }
 
-#contents .eyecatch img {
-  width: 100%;
-  max-width: 1900px;
-  min-height: 400px;
+/* Top画面のボタンの設定　 */
+/*トップ画像*/
+#contents .eyecatch .imgsize_setting1 img {
+  width: 1900px;
+  height: 400px;
   height: auto;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Top画面のボタンの設定　 */
 #contents .eyecatch a:hover {
   color: #b1ffff;
 }
@@ -205,7 +209,7 @@ ul li, ol li {
 
 #header .github_ribbon .forkongithub a {
   background: #3c3f3f;
-  color: #848a8a;
+  color: #b1ffff;
   text-decoration: none;
   font-family: arial,sans-serif;
   text-align: center;
@@ -218,8 +222,8 @@ ul li, ol li {
 }
 
 #header .github_ribbon .forkongithub a:hover {
-  background: #b1ffff;
-  color: #3c3f3f;
+  background: #bbdada;
+  color: #848a8a;
 }
 
 #header .github_ribbon .forkongithub a::before, #header .github_ribbon a::after {
@@ -230,7 +234,7 @@ ul li, ol li {
   top: 1px;
   left: 0;
   height: 1px;
-  background: #b1ffff;
+  background: #f9f9f8;
 }
 
 #header .github_ribbon .forkongithub a::after {
@@ -304,14 +308,14 @@ ul li, ol li {
     overflow: hidden;
     text-align: center;
     display: block;
-    background-color: #848a8a;
+    background-color: #e9eeee;
     font-size: 0.5em;
     z-index: 1;
   }
   #header .selected {
     display: inline-block;
     vertical-align: top;
-    background-color: #f8f9f9;
+    background-color: #bbdada;
     padding: 0px 10px 1px 10px;
     border-radius: 1%;
     z-index: 2;
@@ -322,7 +326,7 @@ ul li, ol li {
     z-index: 2;
   }
   #header .unselected:hover {
-    background-color: #848a8a;
+    background-color: #f9f9f8;
     border-radius: 1%;
   }
   #header body #header h1 {
@@ -350,6 +354,14 @@ ul li, ol li {
     display: none;
   }
   /*ヘッター 可変時の言語選択ボタン設定*/
+  #header .languagenav li a {
+    width: 70px;
+    height: 40px;
+  }
+  #header .languagenav li ul {
+    width: 70px;
+    display: none;
+  }
   /*ヘッターメニューバー部分のロゴ設定*/
   #header .logo_menu {
     display: none;
@@ -374,6 +386,7 @@ ul li, ol li {
   }
   /*ヘッター のレスポンシブメニューのための設定*/
   #header .nav-toggle {
+    background-color: #e9eeee;
     position: absolute;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -403,7 +416,7 @@ ul li, ol li {
     transition: all .5s .2s;
   }
   #header .nav-toggle .menu-trigger.active span {
-    background-color: #e9eeee;
+    background-color: #3c3f3f;
   }
   #header .nav-toggle .menu-trigger span:nth-of-type(1) {
     top: 0;
@@ -425,7 +438,7 @@ ul li, ol li {
   }
   #header .menunav_allset {
     width: 100%;
-    background-color: #848a8a;
+    background-color: #e9eeee;
     color: #3c3f3f;
     text-align: center;
     display: none;
@@ -451,36 +464,36 @@ ul li, ol li {
   /* Title設定　 */
   #contents .eyecatch p {
     width: 100%;
-    min-width: 350px;
+    min-width: 400px;
     position: absolute;
-    top: 30px;
-    left: 10%;
+    top: 100px;
+    left: 20%;
     margin: 50px 0px 50px 0px;
     font-size: 2em;
     font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-    text-shadow: -1px -1px #3c3f3f, 1px -1px #3c3f3f, -1px 1px #3c3f3f, 1px 1px #3c3f3f;
+    text-shadow: -1px -1px #3c3f3f, 2px -1px #3c3f3f, -1px 2px #3c3f3f, 1px 2px #3c3f3f;
   }
   /* Top画面のボタンの設定　 */
   #contents .eyecatch a {
     position: absolute;
-    top: 220px;
-    left: 120px;
+    top: 260px;
+    left: 80px;
     font-size: 1.2em;
     font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-    background-color: #2A2A2A;
     text-decoration: none;
     border: 0;
     padding: 10px 20px 10px 20px;
     display: inline-block;
     vertical-align: top;
-    padding: 0.5em 1em;
-    background: #bcc5c5;
-    border: solid 2px #69bec6;
+    padding: 1em 1.5em;
+    background: rgba(244, 244, 245, 0.233);
+    border: solid 2px #3c3f3f;
     color: #2A2A2A;
     font-weight: bold;
   }
   #contents .eyecatch a:hover {
-    background: rgba(245, 244, 244, 0.37);
+    background: #e9eeee;
+    color: #3c3f3f;
   }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -507,7 +520,7 @@ ul li, ol li {
     max-width: 600px;
     min-width: 300px;
     height: auto;
-    background-color: #848a8a;
+    background-color: #3c3f3f;
     text-align: center;
     margin-top: 50px;
     margin-right: auto;
@@ -527,6 +540,7 @@ ul li, ol li {
     margin-right: auto;
     margin-left: auto;
     margin-top: 4%;
+    color: #9da3a3;
   }
   /* MVの設定　 */
   #contents .section2_setting {
@@ -551,14 +565,14 @@ ul li, ol li {
   }
   #contents .movie_section1 {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: 300px;
     margin-right: auto;
     margin-left: auto;
   }
   #contents .movie_section2 {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -583,7 +597,7 @@ ul li, ol li {
   }
   #contents .download_section_links {
     width: 100%;
-    min-width: 400px;
+    min-width: 300px;
     text-align: left;
     padding-left: 30%;
     padding-right: 30%;
@@ -733,7 +747,7 @@ ul li, ol li {
   #contents .download_contents_topset {
     width: 100%;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -743,7 +757,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: #e9eeee;
@@ -790,7 +804,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: #bbdada;
@@ -822,7 +836,7 @@ ul li, ol li {
     color: #68bdc5;
   }
   #contents .adoption_allset p {
-    color: #f8f9f9;
+    color: #bbdada;
   }
   #contents .adoption_title {
     width: 100%;
@@ -967,7 +981,7 @@ ul li, ol li {
     color: #68bdc5;
   }
   #contents .help_sections_set p {
-    color: #f8f9f9;
+    color: #bbdada;
     padding-top: 15px;
     margin: 20px;
   }
@@ -1014,7 +1028,7 @@ ul li, ol li {
   #contents .tutorial_sections {
     width: 100%;
     max-width: 650px;
-    min-width: 400px;
+    min-width: 300px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1091,7 +1105,7 @@ ul li, ol li {
     display: block;
     text-align: center;
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     background-color: #e9eeee;
     margin-top: 50px;
     margin-right: auto;
@@ -1127,7 +1141,7 @@ ul li, ol li {
   #contents .sample_effect {
     width: 100%;
     max-width: 700px;
-    min-width: 300px;
+    min-width: 160px;
     height: auto;
     display: grid;
     grid-template-rows: auto;
@@ -1146,7 +1160,7 @@ ul li, ol li {
   #contents .sample_effect2 {
     width: 100%;
     max-width: 700px;
-    min-width: 300px;
+    min-width: 160px;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -1182,7 +1196,7 @@ ul li, ol li {
     overflow: hidden;
     text-align: left;
     display: block;
-    background-color: #848a8a;
+    background-color: #e9eeee;
     font-size: 1em;
     z-index: 1;
     padding-top: 20px;
@@ -1219,7 +1233,7 @@ ul li, ol li {
   }
   #header .selected {
     display: inline-block;
-    background-color: #f8f9f9;
+    background-color: #bbdada;
     padding: 0px 10px 1px 10px;
     border-radius: 1%;
   }
@@ -1268,37 +1282,36 @@ ul li, ol li {
   /* Title設定　 */
   #contents .eyecatch p {
     width: 100%;
-    min-width: 450px;
+    min-width: 400px;
     position: absolute;
-    top: 40px;
-    left: 20%;
+    top: 30px;
+    left: 50%;
     margin: 50px 0px 50px 0px;
     font-size: 3em;
     font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-    text-shadow: -1px -1px #3c3f3f, 1px -1px #3c3f3f, -1px 1px #3c3f3f, 1px 1px #3c3f3f;
+    text-shadow: -1px -2px #3c3f3f, 2px -2px #3c3f3f, -2px 2px #3c3f3f, 2px 2px #3c3f3f;
   }
   /* Top画面のボタンの設定　 */
   #contents .eyecatch a {
     position: absolute;
-    top: 220px;
-    left: 70%;
+    top: 240px;
+    left: 15%;
     font-size: 2em;
     font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
-    background-color: #2A2A2A;
     text-decoration: none;
     border: 0;
-    border-radius: 1%;
     padding: 10px 20px 10px 20px;
     display: inline-block;
     vertical-align: top;
-    padding: 0.5em 1em;
-    background: #bcc5c5;
-    border: solid 2px #69bec6;
+    padding: 0.3em 0.8em;
+    background: rgba(244, 244, 245, 0.233);
+    border: solid 2px #3c3f3f;
     color: #2A2A2A;
     font-weight: bold;
   }
   #contents .eyecatch a:hover {
-    background: rgba(245, 244, 244, 0.37);
+    background: #e9eeee;
+    color: #3c3f3f;
   }
   /* sec2の画像３枚の設定　 */
   #contents .section1_setting {
@@ -1318,7 +1331,7 @@ ul li, ol li {
     width: 80%;
     max-width: 400px;
     height: 500px;
-    background-color: #848a8a;
+    background-color: #3c3f3f;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1338,6 +1351,7 @@ ul li, ol li {
     margin-right: auto;
     margin-left: auto;
     margin-top: 4%;
+    color: #9da3a3;
   }
   /* MVの設定　 */
   #contents .section2_bg {
@@ -1364,7 +1378,7 @@ ul li, ol li {
   }
   #contents .movie_section1 {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -1372,7 +1386,7 @@ ul li, ol li {
   }
   #contents .movie_section2 {
     max-width: 600px;
-    min-width: 400px;
+    min-width: 300px;
     height: 300px;
     margin-right: auto;
     margin-left: auto;
@@ -1434,7 +1448,7 @@ ul li, ol li {
   }
   #contents .download_section_links {
     width: 100%;
-    min-width: 400px;
+    min-width: 300px;
     text-align: left;
     margin: 30px;
   }
@@ -1638,7 +1652,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 1200px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: #e9eeee;
@@ -1670,7 +1684,7 @@ ul li, ol li {
     display: flex;
     text-align: center;
     max-width: 1200px;
-    min-width: 400px;
+    min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: #bbdada;
@@ -1700,7 +1714,7 @@ ul li, ol li {
     color: #3c3f3f;
   }
   #contents .adoption_allset p {
-    color: #f8f9f9;
+    color: #bbdada;
   }
   #contents .adoptition_title {
     width: 100%;
@@ -1710,7 +1724,7 @@ ul li, ol li {
   }
   #contents .adopted {
     max-width: 500px;
-    min-width: 400px;
+    min-width: 300px;
     height: 650px;
     color: #68bdc5;
     background-color: #3c3f3f;
@@ -1845,7 +1859,7 @@ ul li, ol li {
     color: #68bdc5;
   }
   #contents .help_sections_set p {
-    color: #f8f9f9;
+    color: #bbdada;
     padding-top: 15px;
     margin: 20px;
   }
