@@ -810,15 +810,28 @@ z-index: 2;
 }
 
   /*ダウンロードの過去のバージョン*/
+  #contents .download_prev h2 {
+    text-align: left;
+    display: block;
+  }
+
   #contents .download_prev {
-    @include sections(100%,2500px,flex,center);
+    @include sections(100%,2500px,block,center);
     max-width: 650px;
     min-width: 300px;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-color: $sashiiro3;
-    flex-wrap: wrap;
+
   }
+
+
+#contents .old_Links_set {
+  ul,li {
+    list-style: none;
+  }
+}
 
   /*採用実績*/
   /*採用実績設定*/

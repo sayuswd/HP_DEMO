@@ -26,7 +26,12 @@ kind: documentation
         .help_sections_set
           .help_sections
             p id="help_sec" Effekseer
-            img src="/images/tool.jpg"
+            - if I18n.locale.to_s == 'jp'
+              a href ="/Help_Tool/index_ja.html"
+                img src="/images/tool.jpg"
+            -else  
+              a href ="/Help_Tool/index_en.html"
+                img src="/images/tool.jpg"
             p =t('documentation.help_effekseer')
             .help_links
               - if I18n.locale.to_s == 'jp'
@@ -36,16 +41,27 @@ kind: documentation
 
           .help_sections
             p Effekseer for Runtime
-            img src="/images/4opengl.png"
+            - if I18n.locale.to_s == 'jp'
+              a href ="/Help_Runtime/index_ja.html"
+                img src="/images/4opengl.png"
+            -else  
+              a href ="/Help_Runtime/index_en.html"
+                img src="/images/4opengl.png"
             p =t('documentation.help_runtime')
             .help_links
               - if I18n.locale.to_s == 'jp'
                 a href ="/Help_Runtime/index_ja.html" =t('documentation.to_help')
               -else  
                 a href ="/Help_Runtime/index_en.html" =t('documentation.to_help')
+
           .help_sections
             p Effekseer for Unity
-            img src="/images/unity.png"
+            - if I18n.locale.to_s == 'jp'
+              a href ="/Help_Unity/index_ja.html" 
+                img src="/images/unity.png"
+            -else  
+              a href ="/Help_Unity/index_en.html" 
+                img src="/images/unity.png"
             p =t('documentation.help_unity')
             .help_links
               - if I18n.locale.to_s == 'jp'
@@ -53,11 +69,15 @@ kind: documentation
               -else  
                 a href ="/Help_Unity/index_en.html" =t('documentation.to_help')
 
-
         .help_sections_set
           .help_sections
             p =t('documentation.dxlib')
-            img src="/images/2runtime.png"
+            - if I18n.locale.to_s == 'jp'
+              a href ="/Help_DxLib/index_ja.html" 
+                img src="/images/2runtime.png"
+            -else  
+              a href ="/Help_DxLib/index_en.html"
+                img src="/images/2runtime.png"
             p =t('documentation.help_dxlib')
             .help_links
               - if I18n.locale.to_s == 'jp'
@@ -67,14 +87,16 @@ kind: documentation
 
           .help_sections
             p Effekseer for Cocos2d-x
-            img src="/images/cocos2dx.png"
+            a href ="/Help_Cocos2dx/index.html" 
+              img src="/images/cocos2dx.png"
             p =t('documentation.help_cocos2dx')
             .help_links
               a href ="/Help_Cocos2dx/index.html" =t('documentation.to_help')
 
           .help_sections
             p Effekseer for UnrealEngine4
-            img src="/images/6unreale.png"
+            a href ="/Help_UE4/index.html"
+              img src="/images/6unreale.png"
             p =t('documentation.help_ue4')
             .help_links
               a href ="/Help_UE4/index.html" =t('documentation.to_help')
