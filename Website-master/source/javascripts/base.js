@@ -3,10 +3,10 @@ $(function () {
   $('.menu-trigger').on('click', function () {
     if ($(this).hasClass('active')) {
       $(this).removeClass('active');
-      $('.menunav_allset').slideUp();
+      $('.menunav_allset').slideUp('fast', function() { $('.menunav_allset').removeAttr('style'); });
     } else {
       $(this).addClass('active');
-      $('.menunav_allset').slideDown();
+      $('.menunav_allset').slideDown('fast');
     }
   });
 });

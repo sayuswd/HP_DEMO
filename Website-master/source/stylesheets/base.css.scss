@@ -255,13 +255,20 @@ ul li, ol li {
 p:hover {
   box-shadow: 0 0 20px 5px rgba(5, 42, 59, 0.829) inset;
 }
+img:hover {
+  opacity: 0.5 ;
+}
 }
 
 #contents .sample_effect2 {
   p:hover {
     box-shadow: 0 0 20px 5px rgba(5, 42, 59, 0.829) inset;
   }
+  img:hover {
+    opacity: 0.5 ;
   }
+  }
+
 
 /*サンプルエフェクトボタン詳細*/
   #contents .contribute_effect_title {
@@ -475,7 +482,7 @@ z-index: 2;
   min-width: 400px;
   position: absolute;
   top: 100px;
-  left: 20%;
+  left: 8%;
   margin: 50px 0px 50px 0px;
   font-size: $font_text_l;
   font-family: "verdana", "serif", "Hiragino Kaku Gothic Pro", "Meiryo", "sans-serif";
@@ -590,10 +597,6 @@ z-index: 2;
   margin-left: auto;
 }
 
-#contents .movie {
-  margin: 50px;
-}
-
 /* download_sectionsの設定　 */
 #contents .section3_setting {
   @include sections( 100%, 700px, block, center);
@@ -649,6 +652,9 @@ z-index: 2;
 
 #contents .contribute_inner_text {
   padding-bottom: 100px;
+  ul {
+    list-style: none;
+  }
 }
 
 
@@ -708,6 +714,7 @@ z-index: 2;
   margin-left: auto;
   }
 }
+/*リリースノート*/
 
 /*紹介*/
 #contents .introduction_section1 {
@@ -816,14 +823,17 @@ z-index: 2;
   }
 
   #contents .download_prev {
-    @include sections(100%,2500px,block,center);
+    @include sections(100%,auto,block,center);
     max-width: 650px;
     min-width: 300px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     background-color: $sashiiro3;
-
+    padding-bottom: $kankaku2;
+h2 {
+  padding: $kankaku2;
+}
   }
 
 
@@ -838,7 +848,7 @@ z-index: 2;
   #contents .adoption_allset {
   width: 100%;
   max-width: 650px;
-  min-width: 300px;
+  min-width: 280px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -849,7 +859,7 @@ z-index: 2;
   #contents .adoption_allset1 {
     width: 100%;
     max-width: 600px;
-    min-width: 300px;
+    min-width: 280px;
     margin-right: auto;
     margin-left: auto;
     }
@@ -877,7 +887,7 @@ z-index: 2;
 #contents .adopted {
   width: 100%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 280px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -889,7 +899,7 @@ z-index: 2;
 #contents .adopted1 {
   width: 100%;
   max-width: 500px;
-  min-width: 300px;
+  min-width: 280px;
   height: auto;
   text-align: center;
   color: $sashiiro2;
@@ -961,7 +971,7 @@ h3 {
     display: flex;
     margin-top: 10px;
     p {
-      margin:20px;
+      margin:15px;
     }
   }
   
@@ -1015,8 +1025,10 @@ p {
     height: auto;
     min-height: 300px;
     background-color: $sashiiro1;
-  //  border-radius: 1%;
     margin: $kankaku2;
+  img:hover {
+    opacity: 0.5 ;
+  }
   }
 
 #contents .help_sections_set h2 {
@@ -1079,10 +1091,12 @@ p {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  //grid-template-columns: 300px 300px;
   margin-right: auto;
   margin-left: auto;
   margin-top: $kankaku2;
+  img:hover {
+    opacity: 0.5 ;
+  }
 }
 
 #contents .locale_sections {
@@ -1247,6 +1261,36 @@ p {
   width: 160px;
   height: auto;
   background-color: $sashiiro2;
+  margin: $sen;
+  padding-top: 3px;
+  }
+
+/*画像クリック時の次のページ*/
+#contents .sample_effect_next {
+  width: 100%;
+  max-width: 700px;
+  min-width: 160px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-column-gap: 10px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $kankaku2;
+  padding-bottom: $kankaku2;
+
+  img {
+  width: 150px;
+  height: auto;
+  }
+}
+
+#contents .sample_effect_next p {
+  width: 160px;
+  height: auto;
+  background-color: $sashiiro1;
   margin: $sen;
   padding-top: 3px;
   }
@@ -1781,13 +1825,17 @@ margin-bottom: 50px;
 
   /*ダウンロードの過去のバージョン*/
   #contents .download_prev {
-    @include sections(100%,2200px,flex,center);
+    @include sections(100%,auto,2600px,center);
     max-width: 1200px;
     min-width: 300px;
     margin-right: auto;
     margin-left: auto;
     background-color: $sashiiro3;
     flex-wrap: wrap;
+    padding-bottom: $kankaku2;
+    h2 {
+      padding: $kankaku2;
+    }
   }
   
   /*採用実績*/
@@ -1975,7 +2023,9 @@ p {
     height: 380px;
     min-height: 300px;
     background-color: $sashiiro1;
-//    border-radius: 1%;
+    img:hover {
+      opacity: 0.5 ;
+    }
   }
 
 #contents .help_sections_set h2 {
@@ -2042,6 +2092,9 @@ p {
   grid-column-gap: 5%;
   margin-right: auto;
   margin-left: auto;
+  img:hover {
+    opacity: 0.5 ;
+  }
 }
 
 #contents .locale_sections {
@@ -2109,6 +2162,9 @@ p {
 /*投稿エフェクト中ページ*/
 #contents .contribute_inner_text {
   padding-bottom: 100px;
+  ul {
+    list-style: none;
+  }
 }
 
 #contents .sample_effect {
@@ -2164,6 +2220,34 @@ p {
     margin: $moji;
     padding-top: 3px;
     }
+
+/*画像クリック時の次のページ*/
+#contents .sample_effect_next {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 1000px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: $kankaku2;
+  text-align: center;
+
+  img {
+    width: 250px;
+    margin: auto;
+  }
+}
+
+#contents .sample_effect_next p {
+  width: 270px;
+  height: auto;
+  background-color: $sashiiro1;
+  margin: $moji;
+  padding-top: 3px;
+  }
 
     #contents .mail_setting {
       @include sections( 100%, auto, flex, center);
