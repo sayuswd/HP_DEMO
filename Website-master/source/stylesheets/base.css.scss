@@ -336,6 +336,16 @@ img:hover {
     border: 0;
   }
 }
+/*はじめのトップ画面*/
+#contents .top_index {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
   /*ヘッター部分のロゴ設定*/
 #header .logo {
@@ -346,6 +356,7 @@ img:hover {
   margin: 10px 20px 0px 20px;
   z-index: 2;
 }
+
 
 /*レスポンシブメニューの言語選択削除*/
 #header .navmenu_set ul {
@@ -532,6 +543,17 @@ z-index: 2;
   margin: 10px;
   }
 
+  
+.start_image {
+  margin-top: 100px;
+img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+}
+}
+
 #contents .top_section {
   width: 80%;
   max-width: 600px;
@@ -645,19 +667,6 @@ z-index: 2;
   }
 }
 
-/*投稿エフェクト中ページ*/
-#contents .contribute_title .contribute_inner {
-  text-align: left;
-}
-
-#contents .contribute_inner_text {
-  padding-bottom: 100px;
-  ul {
-    list-style: none;
-  }
-}
-
-
 /* book_sectionsの設定　 */
 #contents .section5_setting {
   @include sections( 100%, 700px, block, center);
@@ -715,6 +724,66 @@ z-index: 2;
   }
 }
 /*リリースノート*/
+#contents .releasenote_setting {
+  @include sections( 100%, auto, block, center);
+  background-color: $main_color;
+  max-width: 600px;
+  min-width: 300px;
+  margin-top: 20px;
+  margin-right:auto;
+  margin-left: auto;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#contents .img_sectionset {
+  max-width: 600px;
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contents .releasenote_iframe {
+  max-width: 600px;
+  min-width: 200px;
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+#contents .releasenote_section {
+  text-align: center;
+  margin: $kankaku2;
+}
+#contents .allsecimg {
+  margin-left: auto;
+  margin-right: auto;
+img{
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  min-width: 200px;
+}
+}
+
+#contents .introduction_img1_1 h3 {
+  margin: 10px;
+  }
+
+.start_image {
+  margin-top: 100px;
+img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 300px;
+  height: auto;
+}
+}
 
 /*紹介*/
 #contents .introduction_section1 {
@@ -759,7 +828,6 @@ z-index: 2;
     max-width: 150px;
   }
   }
-
 /*ダウンロード*/
   #contents .download_contents_topset{
   width: 100%;
@@ -836,7 +904,6 @@ h2 {
 }
   }
 
-
 #contents .old_Links_set {
   ul,li {
     list-style: none;
@@ -911,7 +978,6 @@ h3 {
 }
 }
 
-
 #contents .iframe {
   position: relative;
   margin-top: 3em;
@@ -935,10 +1001,10 @@ h3 {
 }
 
 #contents .setting {
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr;
-    text-align: left;
-    margin-top: 10px;
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr;
+  text-align: left;
+  margin-top: 10px;
   }
 
 #contents .setting1 {
@@ -974,12 +1040,12 @@ h3 {
       margin:15px;
     }
   }
-  
+
 #contents .adopted_other_setting {
     display: inline-block;
     vertical-align:top;
   }
-  
+
 #contents .adopted_lists_other1 {
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -1265,6 +1331,19 @@ p {
   padding-top: 3px;
   }
 
+
+/*投稿エフェクト中ページ*/
+#contents .contribute_title .contribute_inner {
+  text-align: left;
+}
+
+#contents .contribute_inner_text {
+  padding-bottom: 100px;
+  ul {
+    list-style: none;
+  }
+}
+
 /*画像クリック時の次のページ*/
 #contents .sample_effect_next {
   width: 100%;
@@ -1409,7 +1488,25 @@ p {
   overflow: hidden;
 }
 
+/*はじめのトップ画面*/
+#contents .top_index {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 300px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+.start_image {
+  margin-top: 100px;
+img {
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+  height: auto;
+}
+}
 /* Title設定　 */
 #contents .eyecatch p {
   width: 100%;
@@ -1718,6 +1815,55 @@ p {
   }
 }
 
+/*リリースノート*/
+#contents .releasenote_setting {
+  @include sections( 100%, auto, block, center);
+  max-width: 1200px;
+  min-width: 300px;
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+#contents .img_sectionset {
+  @include sections( 100%, auto, flex, center);
+  display: -webkit-flex;
+  max-width: 1200px;
+  min-width: 300px;
+  text-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: $kankaku;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: $kankaku;
+}
+
+#contents .releasenote_section {
+  text-align: center;
+  margin: $kankaku;
+}
+#contents .allsecimg {
+  margin-left: auto;
+  margin-right: auto;
+img{
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  min-width: 400px;
+}
+}
+
+#contents .releasenote_iframe {
+  max-width: 600px;
+  min-width: 400px;
+  text-align: center;
+  margin-right:auto;
+  margin-left: auto;
+}
+
+
 /*紹介*/
 #contents .introduction_section1 {
   margin: $kankaku;
@@ -1938,8 +2084,6 @@ margin-bottom: 50px;
   margin-top: 20px;
   margin-bottom: 2em;
 }
-
-
 
 #contents .setting {
     display: grid;
