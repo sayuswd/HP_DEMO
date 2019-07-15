@@ -39,24 +39,29 @@ kind: top
         .section2_setting
           .movie_section1
             .movie
-              iframe width="320" height="240" src="https://www.youtube.com/embed/3G5BrmI4V48" frameborder="0" allowfullscreen
-              p =t('top.desc_movie1') 
+              .iframe
+                iframe.iframe_container width="320" height="240" src="https://www.youtube.com/embed/3G5BrmI4V48" frameborder="0" allowfullscreen
+                p =t('top.desc_movie1') 
+
           .movie_section2
             .movie
-              iframe width="320" height="240" src="https://www.youtube.com/embed/JGMu5_opu5Y" frameborder="0" allowfullscreen
-              p =t('top.desc_movie2') 
+              .iframe
+                iframe.iframe_container width="320" height="240" src="https://www.youtube.com/embed/JGMu5_opu5Y" frameborder="0" allowfullscreen
+                p =t('top.desc_movie2') 
 
-      .section3_bg
-        .section3_setting
+
+      
+      .section3_setting
+        .section3_bg
           .download_section1
             h2 Download
-
-
+        
           .download_section2
-            img src="/images/tool.jpg"
+            
             .download_inline
               h3 =t('top.for_designer') 
               a href="download.html#tool" =t('top.effect_editor') 
+            img src="/images/tool.jpg"
 
           .download_section3
             .download_inline

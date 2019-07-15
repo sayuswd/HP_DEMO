@@ -16,7 +16,7 @@
   text-align: $text-align;
 }
 
-@mixin introduction_imgs ($width: 100%, $min-width: 320px, $height: auto) {
+@mixin introduction_imgs ($width: 100%, $min-width: 280px, $height: auto) {
   width: $width;
   min-width: $min-width;
   height: $height;
@@ -24,14 +24,20 @@
 
 /*バックカラー　文字色 幅 各種設定*/
 
-$main_color:#e9eeee;
+$main_color:#e2e5e5;
+$sub_color:#e9eeee;
 $header_color:#e9eeee;
 $header_select: #bbdada;
 $header_text:#3c3f3f;
-$sashiiro1:#848a8a;;
+$sashiiro1:#515252;
+$sashiiro_text1:#848a8a;
 $sashiiro2:#68bdc5;
-$sashiiro3:#bbdada;
+$sashiiro_text2:#68bdc5;
+$sashiiro3:#d1dddd;
+$sashiiro_text3:#bbdada;
 $shadow:#3c3f3f;
+$bg_shadow:#3d3d3d;
+$text_shadow:#3c3f3f;
 
 /*文字の大きさ*/
 $font_h1: 0.5em;
