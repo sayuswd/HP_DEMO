@@ -543,7 +543,7 @@ ul li, ol li {
   #contents .top_section {
     width: 60%;
     max-width: 500px;
-    min-width: 200px;
+    min-width: 300px;
     height: auto;
     background-color: #3d3d3d;
     text-align: center;
@@ -588,14 +588,7 @@ ul li, ol li {
     font-size: 1em;
     text-align: center;
   }
-  #contents .movie_section1 {
-    max-width: 320px;
-    min-width: 200px;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  #contents .movie_section2 {
+  #contents .movie_section {
     max-width: 320px;
     min-width: 200px;
     height: auto;
@@ -1287,12 +1280,12 @@ ul li, ol li {
   #contents .sample_effect {
     width: 100%;
     max-width: 700px;
-    min-width: 160px;
+    min-width: 140px;
     height: auto;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-column-gap: 5px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -1300,38 +1293,36 @@ ul li, ol li {
     padding-bottom: 20px;
   }
   #contents .sample_effect img {
-    width: 150px;
+    width: 140px;
     height: auto;
   }
   #contents .sample_effect2 {
     width: 100%;
     max-width: 700px;
-    min-width: 160px;
+    min-width: 140px;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    grid-column-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-column-gap: 5px;
     height: auto;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
   }
   #contents .sample_effect2 img {
-    width: 150px;
+    width: 140px;
     height: auto;
   }
   #contents .sample_effect p {
-    width: 160px;
+    width: 150px;
     height: auto;
     background-color: #515252;
-    margin: 5px;
     padding-top: 3px;
   }
   #contents .sample_effect2 p {
-    width: 160px;
+    width: 150px;
     height: auto;
     background-color: #68bdc5;
-    margin: 5px;
     padding-top: 3px;
   }
   /*投稿エフェクト中ページ*/
@@ -1555,7 +1546,7 @@ ul li, ol li {
     color: #9da3a3;
   }
   /* MVの設定　*/
-  #contents .section2_bg {
+  #contents .section2_setting {
     width: 100%;
     max-height: auto;
     display: flex;
@@ -1565,30 +1556,43 @@ ul li, ol li {
     -webkit-justify-content: center;
     justify-content: center;
     min-height: 250px;
+    align-content: center;
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 100px;
   }
-  #contents .section2_setting {
-    max-width: 1200px;
-  }
-  #contents .section2_setting p {
+  #contents .section2_setting .section2_setting p {
     font-size: 1.2em;
     text-align: center;
   }
-  #contents .movie_section1 {
-    width: 500px;
-    max-width: 100%;
-    min-width: 25%;
-    height: 300px;
+  #contents .movie_section {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 900px;
+    height: auto;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
   }
-  #contents .movie_section2 {
-    width: 500px;
-    max-width: 100%;
-    min-width: 25%;
+  #contents .movie_section .movie1 {
+    max-width: 500px;
+    min-width: 300px;
     height: 300px;
+  }
+  #contents .movie_section .movie2 {
+    max-width: 500px;
+    min-width: 300px;
+    height: 300px;
+    order: 1;
+  }
+  #contents .movie_section p {
+    width: 300px;
+    height: 80px;
+    font-size: 1.5em;
+    margin-top: 160px;
     margin-right: auto;
     margin-left: auto;
   }
