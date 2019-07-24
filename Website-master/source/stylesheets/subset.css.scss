@@ -38,6 +38,7 @@ $sashiiro_text3:#bbdada;
 $shadow:#3c3f3f;
 $bg_shadow:#3d3d3d;
 $text_shadow:#3c3f3f;
+$link_text:#849494;
 
 /*文字の大きさ*/
 $font_h1: 0.5em;
@@ -56,9 +57,9 @@ $moji: 20px;
 $sen: 5px;
 
 /*アドレスの文字カラー*/
-a:link {color:$shadow;}
+a:link {color:$link_text;}
 a:visited{color:$sashiiro2;} 
-a:active{color:$sashiiro1;}
+a:active{color:$sashiiro_text1;}
 
 #contents .adoption_allset a:link {color: #ffffff;}
 #contents .adoption_allset1 a:link {color: #ffffff;}
